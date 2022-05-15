@@ -1,0 +1,24 @@
+@use '../../styles/vars';
+
+.header{
+  font-family: vars.$titles-font;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: vars.$padding-bloc;
+}
+
+.nav{
+  display: flex;
+  
+
+  &-links{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    &-li{
+      margin: vars.$margin-bloc;
+    }
+  }
+}
