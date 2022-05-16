@@ -19,11 +19,13 @@ function AboutMe() {
   return (
     <div className="aboutMe">
       <h1>About me</h1>
-      <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No?</p>
-      <img src={avatar} alt="avatar-rouziko" />
-      <div className="reconvesion">
-        <h3 className="reconversion-title">Reconversion</h3>
-        <p className="reconversion-p">My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
+      <div className="part-one">
+        <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No?</p>
+        <img src={avatar} alt="avatar-rouziko" />
+        <div className="reconvesion">
+          <h3 className="reconversion-title">Reconversion</h3>
+          <p className="reconversion-p">My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
+        </div>
       </div>
       <div className="icones">
         <img src={html} alt="html" />

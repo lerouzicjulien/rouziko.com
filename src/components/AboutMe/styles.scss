@@ -1,1 +1,20 @@
 @use '../../styles/vars';
+
+.aboutMe{
+  width: 80%;
+  border-radius: 12px;
+  background: #171A23;
+  box-shadow:  37px 37px 74px #0d0f14,
+              -37px -37px 74px #212532;
+  padding: 2rem;
+}
+
+.part-one{
+  display: flex;
+  
+}
+
+h1{
+  font-family: vars.$titles-font;
+  font-size: xx-large;
+}

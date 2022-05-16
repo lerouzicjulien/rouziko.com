@@ -11,9 +11,9 @@ function Header() {
         <NavLink to="#" className="nav-link">My projects</NavLink>
         <NavLink to="#" className="nav-link">Contact me</NavLink> */}
         <ul className="nav-links">
-          <li className="nav-links-li">About me</li>
-          <li className="nav-links-li">My projects</li>
-          <li className="nav-links-li">Contact me</li>
+          <div className="nav-links-li">About me</div>
+          <div className="nav-links-li">My projects</div>
+          <div className="nav-links-li">Contact me</div>
         </ul>
       </nav>
       <button type="button">Color mode</button>
