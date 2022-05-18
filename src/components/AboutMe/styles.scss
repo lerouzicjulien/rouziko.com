@@ -48,9 +48,8 @@ h1{
 
 .icones{
   width: 100%;
-}
-.icones img{
-  margin: 1.5em;
-  width: 3em;
-  box-shadow: 1px 1px 5px white;
+
+  &-di{
+    margin: 2em;
+  }
 }

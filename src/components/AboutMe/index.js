@@ -1,19 +1,19 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 /* eslint-disable max-len */
 import './styles.scss';
-
-// import avatar from '../../assets/images/avatar-Rouziko-sansFond.png';
-import html from '../../assets/images/Icon/html.png';
-import css from '../../assets/images/Icon/css.png';
-import git from '../../assets/images/Icon/git.png';
-import github from '../../assets/images/Icon/github.png';
-import js from '../../assets/images/Icon/js.png';
-// import linkedin from '../../assets/images/Icon/linkedin.png';
-import mariadb from '../../assets/images/Icon/mariadb.png';
-import npm from '../../assets/images/Icon/npm.png';
-// import Octocat from '../../assets/images/Icon/Octocat.png';
-import php from '../../assets/images/Icon/php.png';
-import react from '../../assets/images/Icon/react.png';
-// import mail from '../../assets/images/Icon/mail.png';
+import { IconContext } from 'react-icons';
+import {
+  DiCss3,
+  DiGit,
+  DiGithubBadge,
+  DiHtml5,
+  DiIllustrator,
+  DiJsBadge,
+  DiPhp,
+  DiReact,
+  DiSass,
+  DiVisualstudio,
+} from 'react-icons/di';
 
 // == Composant
 function AboutMe() {
@@ -30,17 +30,20 @@ function AboutMe() {
           <p className="part-one-reconversion-p">My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
         </div>
       </div>
-      <div className="icones">
-        <img src={html} alt="html" />
-        <img src={css} alt="css" />
-        <img src={js} alt="js" />
-        <img src={react} alt="react" />
-        <img src={php} alt="php" />
-        <img src={git} alt="git" />
-        <img src={github} alt="github" />
-        <img src={npm} alt="npm" />
-        <img src={mariadb} alt="mariadb" />
-      </div>
+      <IconContext.Provider value={{ color: '#ad92ff', size: '2em' }}>
+        <div className="icones">
+          <DiHtml5 className="icones-di" />
+          <DiCss3 className="icones-di" />
+          <DiJsBadge className="icones-di" />
+          <DiReact className="icones-di" />
+          <DiSass className="icones-di" />
+          <DiPhp className="icones-di" />
+          <DiGit className="icones-di" />
+          <DiGithubBadge className="icones-di" />
+          <DiVisualstudio className="icones-di" />
+          <DiIllustrator className="icones-di" />
+        </div>
+      </IconContext.Provider>
     </div>
   );
 }

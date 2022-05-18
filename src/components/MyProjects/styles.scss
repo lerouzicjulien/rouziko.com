@@ -1,1 +1,28 @@
 @use '../../styles/vars';
+ 
+.myProjects-title{
+    font-family: vars.$titles-font;
+  }
+
+.myProjects{
+  display: flex;
+  justify-content: space-around;
+
+ 
+}
+
+.project{
+
+
+  &-img{
+
+  }
+
+  &-title{
+    font-family: vars.$nav-font;
+  }
+
+  &-description{
+
+  }
+}
