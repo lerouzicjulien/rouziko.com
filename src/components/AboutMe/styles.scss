@@ -1,20 +1,56 @@
 @use '../../styles/vars';
 
 .aboutMe{
-  width: 80%;
-  border-radius: 12px;
-  background: #171A23;
-  box-shadow:  37px 37px 74px #0d0f14,
-              -37px -37px 74px #212532;
   padding: 2rem;
+  font-size: vars.$text-size;
+
+  &-title{
+    display: flex;
+  }
+
 }
 
 .part-one{
   display: flex;
-  
+  font-family: vars.$text-font;
+  color: vars.$blue;
+  font-weight: 600;
+
+  &-paragraph{
+    // width: 30em;
+    margin-right: 5em;
+    text-justify: inter-word;
+  }
+
+  &-reconversion{
+    // width: 10%;
+
+    &-title{
+      font-family: vars.$nav-font;
+      padding-bottom: 0.5em;
+      color: vars.$green;
+    }
+
+    &-p{
+
+    }
+  }
 }
 
 h1{
   font-family: vars.$titles-font;
-  font-size: xx-large;
+  font-size: 2em;
+  background-image: vars.$gradient;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 0.7em;
+}
+
+.icones{
+  width: 100%;
+}
+.icones img{
+  margin: 1.5em;
+  width: 3em;
+  box-shadow: 1px 1px 5px white;
 }

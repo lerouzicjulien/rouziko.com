@@ -1,13 +1,18 @@
 //* colors *\\
-$blue : #244F90;
-$dark : #171A23;
-$green : #57A500;
-$yellow : #F6BF00;
-$light : #ffedd2;
+$blue : #7dbff0;
+$dark : #0c0d18;
+$green : #5cfac6;
+$yellow : #e9e7b6;
+$violet : #ad92ff;
+$pink : #e69bf9;
+$light: white;
+$gradient: linear-gradient(90deg, rgba(92,250,198,1) 0%, rgba(123,191,240,1) 20%, rgba(173,146,255,1) 60%, rgba(230,155,149,1) 80%, rgba(233,231,182,1) 100%);
 
 //* fonts *\\
-$titles-font : 'Fredoka One', cursive;
-$text-font: 'Baloo 2', cursive;
+$nav-font : 'Bungee';
+$text-font: 'Bungee Hairline';
+$titles-font: 'Bungee Shade';
+$text-size: 1.3em;
 
 //* margin *\\
 $margin-bloc: 2rem;
@@ -15,3 +20,7 @@ $margin-bloc: 2rem;
 //* padding *\\
 $padding-bloc: 1rem;
 
+//'Bungee', cursive;
+//'Bungee Hairline', cursive;
+// 'Bungee Shade', cursive;
+// 'Libre Barcode 39 Extended Text', cursive;

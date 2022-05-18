@@ -2,19 +2,5 @@
 @use 'vars';
 
 body {
-  font-family: vars.$text-font;
-  color: vars.$light;
-  background-color: vars.$dark;
+  background: radial-gradient(circle, rgba(31,33,62,1) 20%, rgba(12,13,24,1) 100%);
 }
-
-/* 
-  // or you can import your own font
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/fonts/Roboto-Regular.ttf');
-  }
-
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-*/

@@ -2,7 +2,9 @@
 
 .header{
   width: 100%;
-  font-family: vars.$titles-font;
+  font-family: vars.$nav-font;
+  font-size: vars.$text-size;
+  
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -11,24 +13,19 @@
 
 .nav{
   display: flex;
-  background-color: vars.$blue;
-  border-radius: 1em;
-  // width: 30%;
-  
 
   &-links{
     display: flex;
     justify-content: space-around;
     width: 100%;
     padding: vars.$padding-bloc;
+    background-image: vars.$gradient;
+    background-clip: text;
+    color: transparent;
 
     &-li{
       // margin: vars.$margin-bloc;
       padding: vars.$padding-bloc;
-      border-radius: 12px;
-      background: #244F90;
-      box-shadow:  9px 9px 15px #20467f,
-                   -9px -9px 15px #2858a1;
     }
   }
 }
