@@ -12,24 +12,36 @@ function MyProjects() {
       <h1 className="myProjects-title">My projects</h1>
       <div className="myProjects">
         <div className="project">
-          <img src={blog} alt="blog" className="project project-img" />
-          <h2 className="project project-title">Fake blog</h2>
-          <p className="project project-description">Mautadine de verrat de charrue de maudine de géritole de crucifix.</p>
+          <div className="project-carre1" />
+          <div className="project-carre2" />
+          <div className="project-carre3" />
+          <img src={blog} alt="blog" className="project-img" />
+          <h2 className="project-title">Fake blog</h2>
+          <p className="project-description">Mautadine de verrat de charrue de maudine de géritole de crucifix.</p>
         </div>
         <div className="project">
-          <img src={dashboard} alt="dashboard" className="project project-img" />
-          <h2 className="project project-title">Dashboard API</h2>
-          <p className="project project-description">Crucifix de viande à chien de charrue de torvisse de cibouleau de colon.</p>
+          <div className="project-carre1" />
+          <div className="project-carre2" />
+          <div className="project-carre3" />
+          <img src={dashboard} alt="dashboard" className="project-img" />
+          <h2 className="project-title">Dashboard API</h2>
+          <p className="project-description">Crucifix de viande à chien de charrue de torvisse de cibouleau de colon.</p>
         </div>
         <div className="project">
-          <img src={gameJs} alt="gameJs" className="project project-img" />
-          <h2 className="project project-title">Game JavaScript</h2>
-          <p className="project project-description">Christie de viande à chien de purée de patente à gosse de crucifix de maudit.</p>
+          <div className="project-carre1" />
+          <div className="project-carre2" />
+          <div className="project-carre3" />
+          <img src={gameJs} alt="gameJs" className="project-img" />
+          <h2 className="project-title">Game JavaScript</h2>
+          <p className="project-description">Christie de viande à chien de purée de patente à gosse de crucifix de maudit.</p>
         </div>
         <div className="project">
-          <img src={responsive} alt="responsive" className="project project-img" />
-          <h2 className="project project-title">Responsive replica</h2>
-          <p className="project project-description">Calvaire de cibole de saint-cimonaque d'enfant d'chienne de purée de bout d'viarge.</p>
+          <div className="project-carre1" />
+          <div className="project-carre2" />
+          <div className="project-carre3" />
+          <img src={responsive} alt="responsive" className="project-img" />
+          <h2 className="project-title">Responsive replica</h2>
+          <p className="project-description">Calvaire de cibole de saint-cimonaque d'enfant d'chienne de purée de bout d'viarge.</p>
         </div>
       </div>
     </>

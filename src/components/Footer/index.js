@@ -4,7 +4,7 @@ import './styles.scss';
 function Footer() {
   return (
     <div className="footer">
-      Ceci est le footer
+      <p className="footer-text">Rouziko 2022</p>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import logo from '../../assets/images/logoRZK.png';
 function Header() {
   return (
     <div className="header" id="home">
-      <a href="#home"><img src={logo} alt="logo-rzk" /></a>
+      <a href="#home"><img src={logo} alt="logo-rzk" className="header-img" /></a>
       <nav className="nav">
         {/* <NavLink to="#" className="nav-link">About me</NavLink>
         <NavLink to="#" className="nav-link">My projects</NavLink>

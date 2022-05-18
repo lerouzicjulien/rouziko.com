@@ -1,7 +1,7 @@
 @use '../../styles/vars';
 
 .header{
-  width: 100%;
+  width: 70%;
   font-family: vars.$nav-font;
   font-size: vars.$text-size;
   
@@ -9,6 +9,10 @@
   align-items: center;
   justify-content: space-between;
   padding: vars.$padding-bloc;
+
+  &-img{
+    width: 10em;
+  }
 }
 
 .nav{
