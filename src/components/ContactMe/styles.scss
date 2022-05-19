@@ -4,17 +4,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
+
   &-title{
+    display: flex;
     font-family: vars.$titles-font;
-    font-size: 3em;
-    text-align: center;
+    font-size: 3rem;
+    background-image: vars.$gradient;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0.7em;
   }
 
   &-icones{
     display: flex;
     justify-content: space-around;
     &-fa{
-      margin: 5em;
+      margin: 1em 5em;
     }
   }
 }

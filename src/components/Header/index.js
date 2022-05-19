@@ -17,8 +17,8 @@ function Header() {
           <div className="nav-links-li nav-links-li-x"> X </div>
           <div className="nav-links-li">[ Contact me ]</div>
         </ul>
+        <h1 className="me">Julien Le Rouzic</h1>
       </nav>
-      {/* <button type="button">Color mode</button> */}
     </div>
   );
 }

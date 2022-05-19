@@ -4,11 +4,11 @@
   background: vars.$gradient;
   width: 100%;
   position: absolute;
-  bottom: -5em;
+  bottom: -2em;
   &-text{
     text-align: center;
     font-family: vars.$nav-font;
     color: vars.$dark;
-    margin: 2em;
+    margin: 0.5em;
   }
 }

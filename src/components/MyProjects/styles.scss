@@ -1,19 +1,26 @@
 @use '../../styles/vars';
  
 .myProjects-title{
-    font-family: vars.$titles-font;
-    font-size: 3em;
+  display: flex;
+  font-family: vars.$titles-font;
+  font-size: 3rem;
+  background-image: vars.$gradient;
+  background-clip: text;
+  color: transparent;
+  padding: 2rem;
   }
 
 .myProjects{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 80%;
-  margin-bottom: 5em;
+  border-bottom: 0.25rem dotted vars.$violet;
 }
 
 .project{
-  width: 100%;
+  width: 40%;
+  height: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +31,8 @@
   border-left: 3px solid vars.$violet;
   border-right: 3px solid vars.$violet;
   position: relative;
+  box-shadow: 3px 3px 10px vars.$green;
+  // background-color: vars.$blue;
 
   &-carre1{
     border: solid 2px black;
@@ -56,8 +65,7 @@
 
   &-img{
     margin-bottom: 1em;
-    width: 10em;
-    // height: ;
+    width: 15em;
   }
 
   &-title{

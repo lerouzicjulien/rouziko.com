@@ -7,12 +7,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 0.25rem dotted vars.$violet;
 
   &-title{
     display: flex;
-
+    font-family: vars.$titles-font;
+    font-size: 3rem;
+    background-image: vars.$gradient;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0.7em;
   }
 
+}
+
+.dev-title{
+  color: vars.$green;
+  font-family: vars.$text-font;
+  font-weight: 700;
+  font-size: xxx-large;
+  align-self: flex-start;
 }
 
 .part-one{
@@ -31,9 +45,11 @@
     // width: 10%;
 
     &-title{
-      font-family: vars.$nav-font;
+      font-family: vars.$text-font;
       padding-bottom: 0.5em;
       color: vars.$green;
+      font-weight: 700;
+      font-size: xx-large;
     }
 
     &-p{
@@ -42,23 +58,57 @@
   }
 }
 
-h1{
-  font-family: vars.$titles-font;
-  font-size: 2em;
-  background-image: vars.$gradient;
-  background-clip: text;
-  color: transparent;
-  margin-bottom: 0.7em;
+.part-two{
+  display: flex;
+
+  &-words{
+    color: vars.$green;
+    margin: 1em 2em;
+    font-family: vars.$text-font;
+    font-weight: 700;
+    animation-name: wordsTranslate;
+    animation-duration: 2s;
+  }
 }
 
 .icones{
+  display: flex;
+  justify-content: center;
   width: 100%;
 
   &-di{
-    margin: 2em;
+    margin: 1em 2em;
+    transition: 0.5s;
+    animation-name: iconesTranslate;
+    animation-duration: 2s;
+    &:hover{
+      transform: translateY(-1em);
+    }
   }
 }
 
 path{
   background-color: vars.$gradient;
+}
+
+@keyframes wordsTranslate {
+  0%{
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes iconesTranslate {
+  0%{
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100%{
+    opacity: 1;
+    transform: none;
+  }
 }

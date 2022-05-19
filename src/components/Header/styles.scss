@@ -1,14 +1,25 @@
 @use '../../styles/vars';
 
+.me{
+  font-family: vars.$barCode-font;
+  font-size: 5rem;
+  background-image: vars.$gradient;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 0.7em;
+}
+
 .header{
-  width: 70%;
+  width: 80%;
   font-family: vars.$nav-font;
   font-size: vars.$text-size;
   
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: vars.$padding-bloc;
+  padding: 0 0.5rem;
+
+  border-bottom: 0.25rem dotted vars.$violet;
 
   &-img{
     width: 10em;
@@ -17,10 +28,13 @@
 
 .nav{
   display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &-links{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     padding: vars.$padding-bloc;
     background-image: vars.$gradient;
@@ -30,6 +44,12 @@
     &-li{
       // margin: vars.$margin-bloc;
       padding: vars.$padding-bloc;
+
+      &-x{
+        font-family: vars.$text-font;
+        font-size: xx-large;
+        font-weight: 700;
+      }
     }
   }
 }
