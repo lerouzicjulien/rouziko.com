@@ -15,7 +15,13 @@ function MyProjects() {
           <div className="project-carre1" />
           <div className="project-carre2" />
           <div className="project-carre3" />
-          <img src={blog} alt="blog" className="project-img" />
+          <div className="project-header">
+            <img src={blog} alt="blog" className="project-header-img" />
+            <div className="projet-header-buttons">
+              <div className="projet-header-buttons-test"><button type="button">Tester</button></div>
+              <div className="projet-header-buttons-github"><button type="button">Github</button></div>
+            </div>
+          </div>
           <h2 className="project-title">Fake blog</h2>
           <p className="project-description">Mautadine de verrat de charrue de maudine de géritole de crucifix.</p>
         </div>
@@ -23,7 +29,13 @@ function MyProjects() {
           <div className="project-carre1" />
           <div className="project-carre2" />
           <div className="project-carre3" />
-          <img src={dashboard} alt="dashboard" className="project-img" />
+          <div className="project-header">
+            <img src={dashboard} alt="blog" className="project-header-img" />
+            <div className="projet-header-buttons">
+              <div className="projet-header-buttons-test"><button type="button">Tester</button></div>
+              <div className="projet-header-buttons-github"><button type="button">Github</button></div>
+            </div>
+          </div>
           <h2 className="project-title">Dashboard API</h2>
           <p className="project-description">Crucifix de viande à chien de charrue de torvisse de cibouleau de colon.</p>
         </div>
@@ -31,7 +43,13 @@ function MyProjects() {
           <div className="project-carre1" />
           <div className="project-carre2" />
           <div className="project-carre3" />
-          <img src={gameJs} alt="gameJs" className="project-img" />
+          <div className="project-header">
+            <img src={gameJs} alt="blog" className="project-header-img" />
+            <div className="projet-header-buttons">
+              <div className="projet-header-buttons-test"><button type="button">Tester</button></div>
+              <div className="projet-header-buttons-github"><button type="button">Github</button></div>
+            </div>
+          </div>
           <h2 className="project-title">Game JavaScript</h2>
           <p className="project-description">Christie de viande à chien de purée de patente à gosse de crucifix de maudit.</p>
         </div>
@@ -39,7 +57,13 @@ function MyProjects() {
           <div className="project-carre1" />
           <div className="project-carre2" />
           <div className="project-carre3" />
-          <img src={responsive} alt="responsive" className="project-img" />
+          <div className="project-header">
+            <img src={responsive} alt="blog" className="project-header-img" />
+            <div className="projet-header-buttons">
+              <div className="projet-header-buttons-test"><button type="button">Tester</button></div>
+              <div className="projet-header-buttons-github"><button type="button">Github</button></div>
+            </div>
+          </div>
           <h2 className="project-title">Responsive replica</h2>
           <p className="project-description">Calvaire de cibole de saint-cimonaque d'enfant d'chienne de purée de bout d'viarge.</p>
         </div>

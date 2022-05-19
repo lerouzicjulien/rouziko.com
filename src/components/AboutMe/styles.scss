@@ -3,30 +3,27 @@
 .aboutMe{
   padding: 2rem;
   font-size: vars.$text-size;
-  width: 80%;
+  width: 93%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 0.25rem dotted vars.$violet;
-
-  &-title{
-    display: flex;
-    font-family: vars.$titles-font;
-    font-size: 3rem;
-    background-image: vars.$gradient;
-    background-clip: text;
-    color: transparent;
-    margin-bottom: 0.7em;
-  }
-
+  border-bottom: 0.2rem dotted vars.$violet;
 }
 
 .dev-title{
+  padding: 1em;
   color: vars.$green;
   font-family: vars.$text-font;
   font-weight: 700;
   font-size: xxx-large;
-  align-self: flex-start;
+  align-self: center;
+  margin: 1em 0 1em 0;
+  border-top: 0.2rem solid vars.$green;
+  border-right: 0.2rem dotted vars.$green;
+  border-bottom: 0.2rem dotted vars.$green;
+  border-left: 0.2rem solid vars.$green;
+  box-shadow: 2px 2px 5px #ad92ff9a;
+
 }
 
 .part-one{
@@ -36,38 +33,30 @@
   font-weight: 600;
 
   &-paragraph{
-    // width: 30em;
-    margin-right: 5em;
+    line-height: 1.5em;
     text-justify: inter-word;
-  }
-
-  &-reconversion{
-    // width: 10%;
-
-    &-title{
-      font-family: vars.$text-font;
-      padding-bottom: 0.5em;
-      color: vars.$green;
-      font-weight: 700;
-      font-size: xx-large;
-    }
-
-    &-p{
-
-    }
+    margin: 0 0 1em 0;
   }
 }
 
 .part-two{
   display: flex;
+  align-items: center;
+  margin: 1em 0;
 
   &-words{
-    color: vars.$green;
+    color: vars.$violet;
     margin: 1em 2em;
     font-family: vars.$text-font;
     font-weight: 700;
     animation-name: wordsTranslate;
     animation-duration: 2s;
+
+    &-title{
+      color: vars.$green;
+      font-size: x-large;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -75,20 +64,22 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  margin: 1em 0;
 
   &-di{
     margin: 1em 2em;
     transition: 0.5s;
-    animation-name: iconesTranslate;
-    animation-duration: 2s;
-    &:hover{
-      transform: translateY(-1em);
+    animation: iconesTranslate 2s infinite;
+
+    &-title{
+      color: vars.$green;
+      font-size: x-large;
+      font-family: vars.$text-font;
+      font-weight: 700;
+      text-decoration: underline;
+      animation: none;
     }
   }
-}
-
-path{
-  background-color: vars.$gradient;
 }
 
 @keyframes wordsTranslate {
@@ -104,11 +95,12 @@ path{
 
 @keyframes iconesTranslate {
   0%{
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: none;
+  }
+  50%{
+    transform: translateY(-1em);
   }
   100%{
-    opacity: 1;
     transform: none;
   }
 }

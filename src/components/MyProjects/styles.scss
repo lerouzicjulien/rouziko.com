@@ -14,12 +14,12 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 80%;
-  border-bottom: 0.25rem dotted vars.$violet;
+  width: 93%;
+  border-bottom: 0.2rem dotted vars.$violet;
 }
 
 .project{
-  width: 40%;
+  width: 35%;
   height: 20rem;
   display: flex;
   flex-direction: column;
@@ -62,11 +62,22 @@
     left: 1.6em;
   }
 
-
-  &-img{
+  &-header{
+    display: flex;
+    &-img{
     margin-bottom: 1em;
     width: 15em;
+     }
+    &-buttons{
+      &-test{
+
+      }
+      &-github{
+
+      }
+    }
   }
+  
 
   &-title{
     font-family: vars.$nav-font;

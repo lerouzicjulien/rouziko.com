@@ -19,19 +19,12 @@ import {
 function AboutMe() {
   return (
     <div className="aboutMe">
-      <span className="aboutMe-title">
-        <h1>About me</h1>
-      </span>
-      <div className="dev-title">Développeur web</div>
+      <h1 className="dev-title">Développeur web</h1>
       <div className="part-one">
-        <p className="part-one-paragraph">Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No?</p>
-        {/* <img src={avatar} alt="avatar-rouziko" className="part-one-avatar" /> */}
-        <div className="part-one-reconvesion">
-          <h3 className="part-one-reconversion-title">Reconversion</h3>
-          <p className="part-one-reconversion-p">My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
-        </div>
+        <p className="part-one-paragraph">Après une dizaine d'année d'animation socio-culturelle dans le milieu associatif, l'heure du changement a sonné ! Formé par l'école O'clock au métier de développeur web avec une spécialité react, il est tant pour moi de mettre un fusion mes softs skills acqui dans mon parcours avec les hards skills appris à force de pratique.</p>
       </div>
       <div className="part-two">
+        <div className="part-two-words part-two-words-title">Soft skills:</div>
         <div className="part-two-words">Fält</div>
         <div className="part-two-words">Koffein</div>
         <div className="part-two-words">Jag Hatar</div>
@@ -42,6 +35,7 @@ function AboutMe() {
       </div>
       <IconContext.Provider value={{ color: '#ad92ff', size: '2em' }}>
         <div className="icones">
+          <div className="icones-di icones-di-title">Soft skills:</div>
           <DiHtml5 className="icones-di" />
           <DiCss3 className="icones-di" />
           <DiJsBadge className="icones-di" />
