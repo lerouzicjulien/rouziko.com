@@ -10,8 +10,9 @@ $gradient: linear-gradient(90deg, rgba(92,250,198,1) 0%, rgba(123,191,240,1) 20%
 
 //* fonts *\\
 $nav-font : 'Bungee';
-$text-font: 'Bungee Hairline';
-$titles-font: 'Bungee Shade';
+$text-font: 'Roboto Mono';
+$titles-section-font: 'Bungee Shade';
+$titles-font: 'Bungee Hairline';
 $text-size: 1.3em;
 $barCode-font: 'Libre Barcode 39 Text'; 
 
@@ -25,3 +26,4 @@ $padding-bloc: 1rem;
 //'Bungee Hairline', cursive;
 // 'Bungee Shade', cursive;
 // 'Libre Barcode 39 Extended Text', cursive;
+// 'Roboto Mono'

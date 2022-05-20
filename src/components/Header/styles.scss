@@ -24,7 +24,8 @@
   top: 0;
   background-color: vars.$dark;
 
-  border-bottom: 0.2rem dotted vars.$violet;
+  border: 0.2rem dotted vars.$violet;
+  border-top: none;
 
   &-img{
     width: 10em;

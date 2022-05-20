@@ -21,17 +21,16 @@ function AboutMe() {
     <div className="aboutMe">
       <h1 className="dev-title">Développeur web</h1>
       <div className="part-one">
-        <p className="part-one-paragraph">Après une dizaine d'année d'animation socio-culturelle dans le milieu associatif, l'heure du changement a sonné ! Formé par l'école O'clock au métier de développeur web avec une spécialité react, il est tant pour moi de mettre un fusion mes softs skills acqui dans mon parcours avec les hards skills appris à force de pratique.</p>
+        <p className="part-one-paragraph">Après une dizaine d'années d'animation socio-culturelle dans le milieu associatif, l'heure du changement a sonné ! Formé par l'école O'clock au métier de développeur web avec une spécialité react, il est temps pour moi de mettre en fusion mes softs skills acquis dans mon parcours avec les hards skills appris à force de pratique.</p>
       </div>
       <div className="part-two">
         <div className="part-two-words part-two-words-title">Soft skills:</div>
-        <div className="part-two-words">Fält</div>
-        <div className="part-two-words">Koffein</div>
-        <div className="part-two-words">Jag Hatar</div>
-        <div className="part-two-words">Ankel</div>
-        <div className="part-two-words">Räfflor</div>
-        <div className="part-two-words">Konsonanten</div>
-        <div className="part-two-words">Klyftan</div>
+        <div className="part-two-words">Autonomie</div>
+        <div className="part-two-words">Adaptabilité</div>
+        <div className="part-two-words">Curiosité</div>
+        <div className="part-two-words">Résolution de problèmes</div>
+        <div className="part-two-words">Esprit d'équipe</div>
+        <div className="part-two-words">Transmission</div>
       </div>
       <IconContext.Provider value={{ color: '#ad92ff', size: '2em' }}>
         <div className="icones">

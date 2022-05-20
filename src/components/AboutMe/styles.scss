@@ -13,7 +13,7 @@
 .dev-title{
   padding: 1em;
   color: vars.$green;
-  font-family: vars.$text-font;
+  font-family: vars.$titles-font;
   font-weight: 700;
   font-size: xxx-large;
   align-self: center;
@@ -54,6 +54,7 @@
 
     &-title{
       color: vars.$green;
+      font-family: vars.$titles-font;
       font-size: x-large;
       text-decoration: underline;
     }
@@ -74,7 +75,7 @@
     &-title{
       color: vars.$green;
       font-size: x-large;
-      font-family: vars.$text-font;
+      font-family: vars.$titles-font;
       font-weight: 700;
       text-decoration: underline;
       animation: none;
