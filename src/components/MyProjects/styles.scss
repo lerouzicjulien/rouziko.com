@@ -14,17 +14,19 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 93%;
+  width: 100%;
   border-bottom: 0.2rem dotted vars.$violet;
 }
 
 .project{
-  width: 35%;
+  width: 20%;
   height: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3em;
+  justify-content: space-around;
+  margin-bottom: 5em;
+  margin-top: 5em;
   padding: 1em;
   border-top: 13px solid vars.$violet;
   border-bottom: 3px solid vars.$violet;
@@ -65,15 +67,32 @@
   &-header{
     display: flex;
     &-img{
-    margin-bottom: 1em;
-    width: 15em;
+    margin: 1em;
+    width: 20em;
      }
     &-buttons{
-      &-test{
+      display: flex;
+      justify-content: space-around;
+      margin: 1em;
 
+      &-test{
+        border: none;
+        background-color: vars.$violet;
+        width: 7em;
+        height: 2em;
+        margin-right: 1em;
+        font-family: vars.$text-font;
+        font-weight: 500;
+        border-radius: 0.5em;
       }
       &-github{
-
+        border: none;
+        background-color: vars.$violet;
+        width: 7em;
+        height: 2em;
+        font-family: vars.$text-font;
+        font-weight: 500;
+        border-radius: 0.5em;
       }
     }
   }
@@ -82,15 +101,6 @@
   &-title{
     font-family: vars.$nav-font;
     color: vars.$violet;
-  }
-
-  &-description{
-    font-family: vars.$text-font;
-    font-weight: 600;
-    color: vars.$green;
-    text-justify: inter-word;
-    text-align: center;
-    width: 90%;
-    margin-top: 1em;
+    font-size: x-large;
   }
 }

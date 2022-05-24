@@ -10,22 +10,22 @@
 }
 
 .header{
-  width: 93%;
+  width: 100%;
   font-family: vars.$nav-font;
   font-size: vars.$text-size;
   
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 1rem;
+  padding: 0.8rem;
 
-  position: sticky;
-  z-index: 1;
-  top: 0;
-  background-color: vars.$dark;
+  // position: sticky;
+  // z-index: 1;
+  // top: 0;
+  // background-color: vars.$dark;
 
-  border: 0.2rem dotted vars.$violet;
-  border-top: none;
+  // border: 0.2rem dotted vars.$violet;
+  // border-top: none;
 
   &-img{
     width: 10em;
