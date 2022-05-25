@@ -3,7 +3,7 @@ import './styles.scss';
 import blog from '../../assets/images/blog.png';
 import dashboard from '../../assets/images/dashboard.png';
 import gameJs from '../../assets/images/gameJs.png';
-import responsive from '../../assets/images/responsive.png';
+// import responsive from '../../assets/images/responsive.png';
 
 // == Composant
 function MyProjects() {
@@ -50,7 +50,7 @@ function MyProjects() {
             <a href="#" rel="noopener noreferrer" target="_blank"><button className="project-header-buttons-github" type="button">Github</button></a>
           </div>
         </div>
-        <div className="project">
+        {/* <div className="project">
           <div className="project-carre1" />
           <div className="project-carre2" />
           <div className="project-carre3" />
@@ -62,7 +62,7 @@ function MyProjects() {
             <button className="project-header-buttons-test" type="button">Tester</button>
             <a href="https://github.com/lerouzicjulien/replica-responsive" rel="noopener noreferrer" target="_blank"><button className="project-header-buttons-github" type="button">Github</button></a>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

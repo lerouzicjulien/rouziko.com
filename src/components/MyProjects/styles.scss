@@ -7,14 +7,14 @@
   background-image: vars.$gradient;
   background-clip: text;
   color: transparent;
-  padding: 2rem;
+  margin: 1em auto;
   }
 
 .myProjects{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 100%;
+  width: 93%;
   border-bottom: 0.2rem dotted vars.$violet;
 }
 
@@ -26,7 +26,7 @@
   align-items: center;
   justify-content: space-around;
   margin-bottom: 5em;
-  margin-top: 5em;
+  margin-top: 2em;
   padding: 1em;
   border-top: 13px solid vars.$violet;
   border-bottom: 3px solid vars.$violet;

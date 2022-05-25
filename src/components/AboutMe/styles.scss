@@ -59,7 +59,7 @@
         font-family: vars.$text-font;
         font-weight: 500;
         animation-name: wordsTranslate;
-        animation-duration: 6s;
+        animation-duration: 1s;
         font-size: 0.9em;
         width: 80%;
     
@@ -145,7 +145,7 @@
       border-right: 3px solid vars.$violet;
       position: relative;
 
-      animation: scaleCV 6s infinite;
+      animation: scaleCV 5s infinite;
   
       &-carre1{
         border: solid 2px black;
@@ -205,8 +205,8 @@
     transform: translateY(-0.7em);
   }
 
-  10%{
-    transform: translateY(0.5em);
+  15%{
+    transform: translateY(0.1em);
   }
   20%{
     transform: none;
@@ -220,10 +220,14 @@
   0%{
     transform: none;
   }
-  12%{
-      transform: scale(1.04);
+  25%{
+    transform: none;
+      
   }
-  24%{
-      transform: none;
+  35%{
+    transform: scale(1.04);
+  }
+  60%{
+    transform: none;
   }
 }
