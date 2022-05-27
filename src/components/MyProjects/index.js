@@ -8,9 +8,9 @@ import gameJs from '../../assets/images/gameJs.png';
 // == Composant
 function MyProjects() {
   return (
-    <>
+    <div className="myProjects">
       <h1 className="myProjects-title">My projects</h1>
-      <div className="myProjects">
+      <div className="myProjects-results">
         <div className="project">
           <div className="project-carre1" />
           <div className="project-carre2" />
@@ -64,7 +64,7 @@ function MyProjects() {
           </div>
         </div> */}
       </div>
-    </>
+    </div>
   );
 }
 

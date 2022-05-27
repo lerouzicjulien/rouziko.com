@@ -1,5 +1,6 @@
 // == Import
 import './styles.scss';
+import { Routes, Route } from 'react-router-dom';
 
 import Header from '../Header';
 import AboutMe from '../AboutMe';
@@ -12,9 +13,11 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <AboutMe />
-      <MyProjects />
-      <ContactMe />
+      <Routes>
+        <Route path="/" element={<AboutMe />} />
+        <Route path="/myprojects" element={<MyProjects />} />
+        <Route path="/contactme" element={<ContactMe />} />
+      </Routes>
       <Footer />
     </div>
   );

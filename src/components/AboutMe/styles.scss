@@ -1,13 +1,13 @@
 @use '../../styles/vars';
 
 .aboutMe{
-  // padding: 2rem;
   font-size: vars.$text-size;
-  width: 93%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-bottom: 0.2rem dotted vars.$violet;
+  justify-content: space-around;
+  padding: 2em;
 }
 
 .dev-title{
@@ -17,7 +17,7 @@
   font-weight: 700;
   font-size: xxx-large;
   align-self: flex-start;
-  margin: 0.5em 0 0 8em;
+  margin: 1em 0 1em 8em;
   border-top: 0.2rem solid vars.$green;
   border-right: 0.2rem dotted vars.$green;
   border-bottom: 0.2rem dotted vars.$green;
@@ -32,17 +32,17 @@
   &-one{
     display: flex;
     flex-direction: column;
-    justify-content: cener;
+    justify-content: space-between;
     align-items: flex-start;
     font-family: vars.$text-font;
     color: vars.$blue;
     font-weight: 600;
-    width: 75%;
+    width: 70%;
   
     &-paragraph{
       line-height: 1.5em;
       text-justify: inter-word;
-      margin: 4em 0 1em 0;
+      margin: 0 0 1.5em 0;
       width: 100%;
     }
 
@@ -51,7 +51,7 @@
       justify-content: flex-start;
       align-items: center;
       width: 100%;
-      margin: 1em 0 1em 0;
+      margin: 0em 0 1em 0;
     
       &-single{
         color: vars.$violet;
@@ -78,7 +78,7 @@
       justify-content: flex-start;
       align-items: center;
       width: 100%;
-      margin: 1em 5em 1.7em 0;
+      margin: 0em 0 2em 0;
 
     
       &-di{

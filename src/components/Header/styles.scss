@@ -2,43 +2,47 @@
 
 .me{
   font-family: vars.$barCode-font;
-  font-size: 5rem;
+  font-size: 3rem;
   background-image: vars.$gradient;
   background-clip: text;
   color: transparent;
-  margin: auto 0;
+  margin-bottom: 2em;
+  text-align: center;
 }
 
 .header{
-  width: 100%;
+  width: 15%;
+  height: 96.4vh;
   font-family: vars.$nav-font;
   font-size: vars.$text-size;
   
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
   padding: 0.8rem;
 
   // position: sticky;
   // z-index: 1;
   // top: 0;
-  // background-color: vars.$dark;
+  background-color: vars.$dark;
 
-  // border: 0.2rem dotted vars.$violet;
+  border-right: 0.2rem dotted vars.$violet;
   // border-top: none;
 
   &-img{
     width: 10em;
+    margin-top: 2em;
   }
 }
 
 .nav{
   display: flex;
-  // flex-direction: column;
-  // align-items: center;
+  margin-bottom: 1em;
 
   &-links{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -47,8 +51,8 @@
     color: transparent;
 
     &-li{
-      // margin: vars.$margin-bloc;
-      padding: vars.$padding-bloc;
+      margin: vars.$margin-bloc;
+      // padding: vars.$padding-bloc;
 
       &-x{
         font-family: vars.$text-font;
