@@ -48,11 +48,17 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@react-three/drei": "^9.11.3",
+    "@react-three/fiber": "^8.0.19",
     "axios": "^0.27.2",
+    "babel-plugin-prismjs": "^2.1.0",
+    "math-random": "^2.0.1",
+    "prismjs": "^1.28.0",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
-    "react-router-dom": "6"
+    "react-router-dom": "6",
+    "three": "^0.141.0"
   }
 }

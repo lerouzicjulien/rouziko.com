@@ -4,7 +4,7 @@ import './styles.scss';
 function Footer() {
   return (
     <div className="footer">
-      <p className="footer-text">Rouziko 2022</p>
+      <p className="footer-text">&#169; Rouziko 2022</p>
     </div>
   );
 }

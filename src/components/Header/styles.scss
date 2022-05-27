@@ -11,24 +11,22 @@
 }
 
 .header{
-  width: 15%;
-  height: 96.4vh;
-  font-family: vars.$nav-font;
-  font-size: vars.$text-size;
-  
   display: flex;
   flex-direction: column;
   align-items:center;
   justify-content: space-between;
+  width: 15em;
+  height: 96.4vh;
   padding: 0.8rem;
 
-  // position: sticky;
-  // z-index: 1;
-  // top: 0;
   background-color: vars.$dark;
 
-  border-right: 0.2rem dotted vars.$violet;
-  // border-top: none;
+  border-right: 1rem solid vars.$violet;
+  border-width: 4px;
+  border-radius:0 4% 92% 0/4% 95% 6% 95%;
+
+  font-family: vars.$nav-font;
+  font-size: vars.$text-size;
 
   &-img{
     width: 10em;

@@ -9,18 +9,19 @@
   padding: 2em;
 
   &-title{
-    display: flex;
-    font-family: vars.$titles-section-font;
-    font-size: 3rem;
-    background-image: vars.$gradient;
-    background-clip: text;
-    color: transparent;
+    // display: flex;
+    // font-family: vars.$titles-section-font;
+    font-size: xx-large;
+    // background-image: vars.$gradient;
+    // background-clip: text;
+    // color: transparent;
     }
   &-results{
     display: flex;
     justify-content: space-around;
   }
 }
+
 .project{
   width: 30%;
   height: 20rem;
@@ -34,7 +35,7 @@
   border-left: 3px solid vars.$violet;
   border-right: 3px solid vars.$violet;
   position: relative;
-  box-shadow: 3px 3px 10px vars.$green;
+  box-shadow: 3px 3px 8px vars.$dark;
 
   &-carre1{
     border: solid 2px black;
@@ -69,6 +70,7 @@
     &-img{
     margin: 1em;
     width: 20em;
+    border-radius: 0.2em;
      }
     &-buttons{
       display: flex;

@@ -1,15 +1,25 @@
 import './styles.scss';
-
+import { useEffect } from 'react';
+import Prism from 'prismjs';
 import blog from '../../assets/images/blog.png';
 import dashboard from '../../assets/images/dashboard.png';
 import gameJs from '../../assets/images/gameJs.png';
-// import responsive from '../../assets/images/responsive.png';
 
 // == Composant
 function MyProjects() {
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
+
+  const myProjects = "const myProjects = ['Fake Blog', 'Dashboard API', 'Game JavaScript']";
   return (
     <div className="myProjects">
-      <h1 className="myProjects-title">My projects</h1>
+      <div className="pulsation" />
+      <div className="myProjects-title">
+        <pre>
+          <code className="language-jsx">{myProjects}</code>
+        </pre>
+      </div>
       <div className="myProjects-results">
         <div className="project">
           <div className="project-carre1" />
