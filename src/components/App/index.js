@@ -8,6 +8,7 @@ import AboutMe from '../AboutMe';
 import ContactMe from '../ContactMe';
 import Footer from '../Footer';
 import MyProjects from '../MyProjects';
+import Accueil from '../Accueil';
 // import Background from '../Background';
 
 // == Composant
@@ -16,7 +17,8 @@ function App() {
     <div className="app">
       <Header />
       <Routes>
-        <Route path="/" element={<AboutMe />} />
+        <Route path="/" element={<Accueil />} />
+        <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/myprojects" element={<MyProjects />} />
         <Route path="/contactme" element={<ContactMe />} />
       </Routes>

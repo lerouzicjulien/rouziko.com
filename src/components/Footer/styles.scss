@@ -3,8 +3,8 @@
 .footer{
   background: vars.$gradient;
   width: 100%;
-  position: absolute;
-  bottom: -2em;
+  position: fixed;
+  bottom: 0;
   &-text{
     text-align: center;
     font-family: vars.$text-font;

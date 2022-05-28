@@ -9,7 +9,7 @@ function Header() {
       <Link to="/"><img src={logo} alt="logo-rzk" className="header-img" /></Link>
       <nav className="nav">
         <ul className="nav-links">
-          <NavLink to="/" className="nav-links-li">[ About me ]</NavLink>
+          <NavLink to="/aboutme" className="nav-links-li">[ About me ]</NavLink>
           <div className="nav-links-li nav-links-li-x"> X </div>
           <NavLink to="/myprojects" className="nav-links-li">[ My projects ]</NavLink>
           <div className="nav-links-li nav-links-li-x"> X </div>

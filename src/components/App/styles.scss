@@ -5,9 +5,7 @@
   // background-color: vars.$dark;
 }
 pre{
-  border-radius: 0.6em;
-  border: 1em solid vars.$violet;
-  border-width: 2px 3px 2px 3px;
-  border-radius:5% 14% 12% 25%/4% 15% 6% 17%;
-  box-shadow: 3px 3px 8px vars.$dark;
+  border-radius: 0.1em;
+  box-shadow: 3px 3px 12px vars.$dark;
+  padding: 0.5em;
 }

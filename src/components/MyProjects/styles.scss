@@ -4,17 +4,13 @@
   width: 85%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding: 2em;
 
   &-title{
-    // display: flex;
-    // font-family: vars.$titles-section-font;
     font-size: xx-large;
-    // background-image: vars.$gradient;
-    // background-clip: text;
-    // color: transparent;
+    margin-bottom: 2em;
     }
   &-results{
     display: flex;
@@ -35,7 +31,9 @@
   border-left: 3px solid vars.$violet;
   border-right: 3px solid vars.$violet;
   position: relative;
-  box-shadow: 3px 3px 8px vars.$dark;
+  box-shadow: 3px 3px 12px vars.$dark;
+  background-color: vars.$dark;
+  margin-top: 3em;
 
   &-carre1{
     border: solid 2px black;
