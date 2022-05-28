@@ -3,7 +3,6 @@ import './styles.scss';
 import { Routes, Route } from 'react-router-dom';
 // import 'prismjs/themes/prism.css';
 
-import Header from '../Header';
 import AboutMe from '../AboutMe';
 import ContactMe from '../ContactMe';
 import Footer from '../Footer';
@@ -15,7 +14,6 @@ import Accueil from '../Accueil';
 function App() {
   return (
     <div className="app">
-      <Header />
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/aboutme" element={<AboutMe />} />

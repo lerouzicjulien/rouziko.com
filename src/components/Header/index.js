@@ -13,7 +13,7 @@ function Header() {
           <div className="nav-links-li nav-links-li-x"> X </div>
           <NavLink to="/myprojects" className="nav-links-li">[ My projects ]</NavLink>
           <div className="nav-links-li nav-links-li-x"> X </div>
-          <NavLink to="contactme" className="nav-links-li">[ Contact me ]</NavLink>
+          <NavLink to="/contactme" className="nav-links-li">[ Contact me ]</NavLink>
         </ul>
       </nav>
       <h1 className="me">Julien <br />Le Rouzic</h1>
