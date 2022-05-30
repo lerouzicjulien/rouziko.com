@@ -35,20 +35,19 @@
         transition: 0.5s;
         margin-right: 0.3em;
 
-        &:hover{
-          transform: translateY(-0.20em);
-        }
+        animation: scaleLetter 4s infinite;
       }
+
       &-2{
         color: vars.$violet;
         font-family: 'Press Start 2P';
         font-size: 20em;
         transition: 0.5s;
 
-        &:hover{
-          transform: translateY(-0.20em);
-        }
+        animation: scaleLetter 4s infinite;
+        animation-delay: 0.5s;
       }
+
       &-3{
         color: vars.$violet;
         font-family: 'Press Start 2P';
@@ -56,9 +55,8 @@
         transition: 0.5s;
         margin-left: 0.3em;
 
-        &:hover{
-          transform: translateY(-0.20em);
-        }
+        animation: scaleLetter 4s infinite;
+        animation-delay: 1s;
       }
     }
     &-subTitle{
@@ -140,5 +138,17 @@
         }
       }
     }
+  }
+}
+
+@keyframes scaleLetter {
+  0%{
+    transform: none;
+  }
+  10%{
+    transform: scale(1.2);
+  }
+  20%{
+    transform: none;
   }
 }

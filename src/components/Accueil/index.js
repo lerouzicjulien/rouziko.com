@@ -1,9 +1,15 @@
 import './styles.scss';
 import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 function Accueil() {
   return (
-    <div className="accueil">
+    <motion.div
+      className="accueil"
+      initial={{ width: 0 }}
+      animate={{ width: '100%' }}
+      exit={{ x: window.innerWidth, transition: { duration: 500 } }}
+    >
       <div className="accueil-logo">
         <div className="accueil-logo-carre">
           <div className="accueil-logo-carre-1" />
@@ -26,7 +32,7 @@ function Accueil() {
           <NavLink to="contactme" className="accueil-nav-links-li">[ Contact me ]</NavLink>
         </ul>
       </nav>
-    </div>
+    </motion.div>
   );
 }
 

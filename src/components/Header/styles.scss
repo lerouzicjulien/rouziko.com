@@ -28,6 +28,9 @@
   font-family: vars.$nav-font;
   font-size: vars.$text-size;
 
+  position: sticky;
+  z-index: 1;
+
   &-img{
     width: 10em;
     margin-top: 2em;
