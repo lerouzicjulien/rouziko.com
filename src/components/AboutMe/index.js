@@ -20,7 +20,7 @@ import { useEffect } from 'react';
 import Prism from 'prismjs';
 
 import cv from 'src/assets/images/CV-RZK-dark.jpg';
-import { motion } from 'framer-motion';
+import { Fade } from 'react-reveal';
 
 // == Composant
 function AboutMe() {
@@ -30,19 +30,15 @@ function AboutMe() {
   const title = 'class Julien extends Le.Rouzic {\'Développeur web\'};';
   // const softskills = 'let softskills = ["Autonomie", "Curiosité", "Résolution de problèmes",  "Esprit  d\'équipe", "Transmission"];';
   return (
-    <motion.div
-      className="aboutMeStart"
-      initial={{ width: 0 }}
-      animate={{ width: '100%' }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
-    >
-      <div className="pulsation" />
-      <div className="aboutMe">
+    <div className="aboutMe">
+      <Fade down>
         <div className="dev-title">
           <pre>
             <code className="language-jsx">{title}</code>
           </pre>
         </div>
+      </Fade>
+      <Fade up distance="17%">
         <div className="part">
           <div className="part-one">
             <p className="part-one-paragraph">Après une dizaine d'années d'animation socio-culturelle dans le milieu associatif, l'heure du changement a sonné ! Formé par l'école O'clock au métier de développeur web avec une spécialité React.JS, il est temps pour moi de mettre en fusion mes softs skills acquis dans mon parcours avec les hards skills appris à force de pratique.</p>
@@ -78,8 +74,8 @@ function AboutMe() {
             <a href={cv} rel="noopener noreferrer" target="_blank"><img className="part-two-cv-image" src={cv} alt="cv" /></a>
           </div>
         </div>
-      </div>
-    </motion.div>
+      </Fade>
+    </div>
   );
 }
 

@@ -1,14 +1,14 @@
 @use '../../styles/vars';
 
 .footer{
-  background: vars.$gradient;
+  // background: vars.$gradient;
   width: 100%;
   position: fixed;
   bottom: 0;
   &-text{
     text-align: center;
     font-family: vars.$text-font;
-    color: vars.$dark;
+    color: vars.$violet;
     margin: 0.5em;
   }
 }

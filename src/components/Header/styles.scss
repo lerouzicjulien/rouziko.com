@@ -16,7 +16,7 @@
   align-items:center;
   justify-content: space-between;
   width: 15em;
-  height: 96.4vh;
+  height: 100vh;
   padding: 0.8rem;
 
   background-color: vars.$dark;
@@ -28,7 +28,7 @@
   font-family: vars.$nav-font;
   font-size: vars.$text-size;
 
-  position: sticky;
+  // position: sticky;
   z-index: 1;
 
   &-img{

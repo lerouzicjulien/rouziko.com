@@ -28,6 +28,7 @@
     &-title{
       display: flex;
       justify-content: center;
+      margin-top: 1em;
       &-1{
         color: vars.$violet;
         font-family: 'Press Start 2P';
@@ -65,7 +66,7 @@
       background-image: vars.$gradient;
       background-clip: text;
       color: transparent;
-      margin-bottom: 0.3em;
+      margin-bottom: 0.4em;
       text-align: center;
     }
 
