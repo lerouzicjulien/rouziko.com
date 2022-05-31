@@ -13,9 +13,9 @@ function ContactMe() {
     Prism.highlightAll();
   }, []);
   const contactMe1 = 'if(youAreInterested === true) {';
-  const contactMe2 = 'contactMe()';
+  const contactMe2 = '  contactMe()';
   const contactMe3 = '} else {';
-  const contactMe4 = 'keepMyContactAnyway()};';
+  const contactMe4 = '  keepMyContactAnyway()};';
   const contactMe5 = '};';
   return (
     <div className="contactMe">
