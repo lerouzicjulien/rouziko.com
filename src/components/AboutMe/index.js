@@ -19,7 +19,7 @@ import {
 import { useEffect } from 'react';
 import Prism from 'prismjs';
 
-import cv from 'src/assets/images/CV-RZK-dark.jpg';
+import cv from 'src/assets/images/CV-RZK-V7.jpg';
 import { Fade } from 'react-reveal';
 
 // == Composant
