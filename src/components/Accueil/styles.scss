@@ -21,7 +21,7 @@
     position: relative;
     box-shadow: 3px 3px 12px vars.$dark;
     background-color: vars.$dark;
-    margin-top: 5em;
+    margin-top: 2.5em;
     margin-bottom: 1.5em;
 
     &-title{
@@ -75,13 +75,13 @@
     font-size: 1.9em;
     font-weight: 700;
     color: vars.$green;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
   }
 
   &-nav{
   
     &-links{
-      margin-top: 1em;
+      // margin-top: 1em;
       display: flex;
       flex-direction: column;
       font-family: vars.$nav-font;
