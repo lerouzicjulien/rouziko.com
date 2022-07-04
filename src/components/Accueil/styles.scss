@@ -120,23 +120,21 @@
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .accueil{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em;
 
     &-logo{
-      width: 80em;
+      width: 75em;
       height: 35rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      padding-left: 3em;
       border-top: 23px solid vars.$violet;
       border-bottom: 6px solid vars.$violet;
       border-left: 6px solid vars.$violet;
@@ -149,35 +147,10 @@
       &-title{
         display: flex;
         justify-content: center;
-        margin-top: 1em;
-        &-1{
-          color: vars.$violet;
-          font-family: 'Press Start 2P';
-          font-size: 20em;
-          transition: 0.5s;
-          margin-right: 0.3em;
-        }
-
-        &-2{
-          color: vars.$violet;
-          font-family: 'Press Start 2P';
-          font-size: 20em;
-          transition: 0.5s;
-
-          animation: scaleLetter 4s infinite;
-          animation-delay: 0.5s;
-        }
-
-        &-3{
-          color: vars.$violet;
-          font-family: 'Press Start 2P';
-          font-size: 20em;
-          transition: 0.5s;
-          margin-left: 0.3em;
-
-          animation: scaleLetter 4s infinite;
-          animation-delay: 1s;
-        }
+        color: vars.$violet;
+        font-family: 'Press Start 2P';
+        font-size: 20em;
+        transition: 0.5s;
       }
       &-subTitle{
         font-family: vars.$barCode-font;
@@ -185,7 +158,6 @@
         background-image: vars.$gradient;
         background-clip: text;
         color: transparent;
-        margin-bottom: 0.4em;
         text-align: center;
       }
 
@@ -220,24 +192,30 @@
       }
     }
 
+    &-dev {
+      font-family: vars.$titles-font;
+      font-size: 4.5em;
+      font-weight: 700;
+      color: vars.$green;
+      margin-bottom: 0;
+    }
+
     &-nav{
-      display: flex;
-      margin-bottom: 1em;
-      margin-top: 2em;
     
       &-links{
         display: flex;
+        flex-direction: row;
         font-family: vars.$nav-font;
-        font-size: 2.5em;
+        font-size: 2.2em;
         justify-content: space-around;
         align-items: center;
-        width: 100%;
         background-image: vars.$gradient;
         background-clip: text;
         color: transparent;
+        margin-top: 0;
 
         &-li{
-          margin: 0.4em;
+          margin-right: 0.4em;
 
           &:hover{
             // text-shadow: 2px 2px 7px vars.$green;
@@ -263,6 +241,124 @@
   }
 }
 
-@media (min-width: 480px) and (max-width: 1024px) {
-  
+@media (min-width: 960px) and (max-width: 1199px) {
+  .accueil{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-logo{
+      width: 55em;
+      height: 30rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 23px solid vars.$violet;
+      border-bottom: 6px solid vars.$violet;
+      border-left: 6px solid vars.$violet;
+      border-right: 6px solid vars.$violet;
+      position: relative;
+      box-shadow: 3px 3px 12px vars.$dark;
+      background-color: vars.$dark;
+      margin-top: 5em;
+
+      &-title{
+        display: flex;
+        justify-content: center;
+        color: vars.$violet;
+        font-family: 'Press Start 2P';
+        font-size: 16em;
+      }
+      &-subTitle{
+        font-family: vars.$barCode-font;
+        font-size: 5em;
+        background-image: vars.$gradient;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+      }
+
+      &-carre{
+        &-1{
+          border: solid 3px black;
+          background-color: vars.$green;
+          height: 0.8rem;
+          width: 0.8rem;
+          position: absolute;
+          top: -1em;
+          left: 0.2em;
+        }
+        &-2{
+          border: solid 3px black;
+          background-color: vars.$green;
+          height: 0.8rem;
+          width: 0.8rem;
+          position: absolute;
+          top: -1em;
+          left: 1.2em;
+        }
+        &-3{
+          border: solid 3px black;
+          background-color: vars.$green;
+          height: 0.8rem;
+          width: 0.8rem;
+          position: absolute;
+          top: -1em;
+          left: 2.2em;
+        }
+      }
+    }
+
+    &-dev {
+      font-family: vars.$titles-font;
+      font-size: 3.5em;
+      font-weight: 700;
+      color: vars.$green;
+      margin-bottom: 0;
+      margin-top: 0.5em;
+    }
+
+    &-nav{
+    
+      &-links{
+        display: flex;
+        flex-direction: row;
+        font-family: vars.$nav-font;
+        font-size: 1.8em;
+        justify-content: space-around;
+        align-items: center;
+        background-image: vars.$gradient;
+        background-clip: text;
+        color: transparent;
+        margin-top: 1.5em;
+
+        &-li{
+          margin-right: 0.4em;
+
+          &:hover{
+            // text-shadow: 2px 2px 7px vars.$green;
+            color: vars.$violet;
+            transform: scale(1.1);
+          }
+      
+    
+          &-x{
+            font-family: vars.$text-font;
+            font-size: 2em;
+            font-weight: 700;
+
+            &:hover{
+              text-shadow: none;
+              transform: none;
+            }
+        
+          }
+        }
+      }
+    }
+  }
 }
+
