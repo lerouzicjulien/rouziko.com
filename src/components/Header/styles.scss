@@ -55,12 +55,30 @@
       margin: vars.$margin-bloc;
       // padding: vars.$padding-bloc;
 
+      &:hover{
+        // text-shadow: 2px 2px 7px vars.$green;
+        // border: 1px solid vars.$violet;
+        transform: scale(1.1);
+        color: vars.$violet;
+      }
+
       &-x{
         font-family: vars.$text-font;
         font-size: xx-large;
         font-weight: 700;
+
+        &:hover{
+          text-shadow: none;
+          transform: none;
+        }
       }
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    visibility: hidden;
   }
 }
 

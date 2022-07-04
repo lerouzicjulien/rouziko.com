@@ -36,7 +36,10 @@
         transition: 0.5s;
         margin-right: 0.3em;
 
-        animation: scaleLetter 4s infinite;
+        // animation: scaleLetter 4s infinite;
+        &:hover{
+          transform: rotate3D(180deg);
+        }
       }
 
       &-2{
@@ -121,7 +124,8 @@
         margin: 0.4em;
 
         &:hover{
-          text-shadow: 2px 2px 7px vars.$green;
+          // text-shadow: 2px 2px 7px vars.$green;
+          color: vars.$violet;
           transform: scale(1.1);
         }
     
@@ -142,14 +146,14 @@
   }
 }
 
-@keyframes scaleLetter {
-  0%{
-    transform: none;
-  }
-  10%{
-    transform: scale(1.2);
-  }
-  20%{
-    transform: none;
-  }
-}
+// @keyframes scaleLetter {
+//   0%{
+//     transform: none;
+//   }
+//   10%{
+//     transform: rotateY(360deg);
+//   }
+//   20%{
+//     transform: none;
+//   }
+// }
