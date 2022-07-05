@@ -7,9 +7,11 @@ import ContactMe from '../ContactMe';
 import MyProjects from '../MyProjects';
 import Accueil from '../Accueil';
 import Header from '../Header';
+import BurgerMenu from '../BurgerMenu';
 
 // == Composant
 function App() {
+  console.log(window.innerWidth);
   return (
     <div className="app">
       <Routes>
@@ -18,6 +20,7 @@ function App() {
           path="/aboutme"
           element={(
             <>
+              {window.matchMedia('(min-width: 1200px)') ? <BurgerMenu /> : <Header />}
               {/* <Header /> */}
               <AboutMe />
             </>

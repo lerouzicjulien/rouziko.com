@@ -1,5 +1,14 @@
 @use '../../styles/vars';
-
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+.bm-burger-bars {
+  background: #373a47;
+}
 .header{
   display: flex;
   flex-direction: column;
@@ -66,6 +75,12 @@
   color: transparent;
   margin-bottom: 2em;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .header--burger {
+    visibility: hidden;
+  }
 }
 
 @keyframes rotate{

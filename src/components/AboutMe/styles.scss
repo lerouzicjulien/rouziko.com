@@ -125,13 +125,6 @@
       position: relative;
 
       animation: scaleCV 5s infinite;
-      &-text {
-        color: vars.$violet;
-        font-family: 'Press Start 2P';
-        font-size: 2000em;
-        letter-spacing: 0.2em;
-        margin: 2em;
-      }
       &-carre1{
         border: solid 2px black;
         background-color: vars.$green;
