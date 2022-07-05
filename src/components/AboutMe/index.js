@@ -27,21 +27,25 @@ function AboutMe() {
   useEffect(() => {
     Prism.highlightAll();
   }, []);
-  const title = 'class Julien extends Le.Rouzic {\'Développeur web\'};';
+  const title = 'class Julien extends Le.Rouzic {';
+  const title2 = '  \'Développeur web\'';
+  const title3 = '};';
   // const softskills = 'let softskills = ["Autonomie", "Curiosité", "Résolution de problèmes",  "Esprit  d\'équipe", "Transmission"];';
   return (
     <div className="aboutMe">
       <Fade down>
         <div className="dev-title">
           <pre>
-            <code className="language-jsx">{title}</code>
+            <code className="language-jsx">{title}</code><br />
+            <code className="language-jsx">{title2}</code><br />
+            <code className="language-jsx">{title3}</code>
           </pre>
         </div>
       </Fade>
       <Fade up distance="17%">
         <div className="part">
           <div className="part-one">
-            <p className="part-one-paragraph">Après une dizaine d'années d'animation socio-culturelle dans le milieu associatif, l'heure du changement a sonné ! Formé par l'école O'clock au métier de développeur web avec une spécialité React.JS, il est temps pour moi de mettre en fusion mes softs skills acquis dans mon parcours avec les hards skills appris à force de pratique.</p>
+            <p className="part-one-paragraph">Après une dizaine d'années d'animation socio-culturelle dans le milieu associatif, l'heure du changement a sonné ! Formé par l'école O'clock au métier de développeur web avec une spécialité React.JS, il est temps pour moi de mettre en fusion mes softs skills acquis durant mon parcours, et les hards skills appris à force de pratique.</p>
             <div className="part-one-words">
               {/* <pre>
                 <code className="language-jsx">{softskills}</code>

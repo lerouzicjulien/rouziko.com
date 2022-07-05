@@ -1,15 +1,5 @@
 @use '../../styles/vars';
 
-.me{
-  font-family: vars.$barCode-font;
-  font-size: 3rem;
-  background-image: vars.$gradient;
-  background-clip: text;
-  color: transparent;
-  margin-bottom: 2em;
-  text-align: center;
-}
-
 .header{
   display: flex;
   flex-direction: column;
@@ -18,17 +8,12 @@
   width: 15em;
   height: 100vh;
   padding: 0.8rem;
-
   background-color: vars.$dark;
-
   border-right: 1rem solid vars.$violet;
   border-width: 4px;
   border-radius:0 4% 92% 0/4% 95% 6% 95%;
-
   font-family: vars.$nav-font;
   font-size: vars.$text-size;
-
-  // position: sticky;
   z-index: 1;
 
   &-img{
@@ -53,11 +38,8 @@
 
     &-li{
       margin: vars.$margin-bloc;
-      // padding: vars.$padding-bloc;
 
       &:hover{
-        // text-shadow: 2px 2px 7px vars.$green;
-        // border: 1px solid vars.$violet;
         transform: scale(1.1);
         color: vars.$violet;
       }
@@ -74,6 +56,16 @@
       }
     }
   }
+}
+
+.me{
+  font-family: vars.$barCode-font;
+  font-size: 3rem;
+  background-image: vars.$gradient;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 2em;
+  text-align: center;
 }
 
 @keyframes rotate{

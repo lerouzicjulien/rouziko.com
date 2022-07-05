@@ -18,7 +18,7 @@ function App() {
           path="/aboutme"
           element={(
             <>
-              <Header />
+              {/* <Header /> */}
               <AboutMe />
             </>
           )}
