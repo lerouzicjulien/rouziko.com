@@ -12,11 +12,7 @@ function Accueil() {
             <div className="accueil-logo-carre-2" />
             <div className="accueil-logo-carre-3" />
           </div>
-          <div className="accueil-logo-title">RZK
-            {/* <div className="accueil-logo-title-1">R</div>
-            <div className="accueil-logo-title-2">Z</div>
-            <div className="accueil-logo-title-3">K</div> */}
-          </div>
+          <div className="accueil-logo-title">RZK</div>
           <div className="accueil-logo-subTitle">Julien LE ROUZIC</div>
         </div>
         <div className="accueil-dev">Développeur web</div>
