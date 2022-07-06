@@ -2,9 +2,10 @@ import './styles.scss';
 import { useEffect } from 'react';
 import Prism from 'prismjs';
 import Fade from 'react-reveal/Fade';
-import blog from '../../assets/images/blog.png';
+// import blog from '../../assets/images/blog.png';
 import dashboard from '../../assets/images/dashboard.png';
-import gameJs from '../../assets/images/gameJs.png';
+import olumni from '../../assets/images/olumni.png';
+// import gameJs from '../../assets/images/gameJs.png';
 
 // == Composant
 function MyProjects() {
@@ -12,14 +13,18 @@ function MyProjects() {
     Prism.highlightAll();
   }, []);
 
-  const myProjects = "const myProjects = ['Fake Blog', 'Dashboard API', 'Game JavaScript']";
+  const myProjects = 'const myProjects = [';
+  const myProjects2 = '   "O\'lumni", "Dashboard API"';
+  const myProjects3 = '];';
   return (
     <div className="myProjects">
       <Fade down>
         <div className="pulsation" />
         <div className="myProjects-title">
           <pre>
-            <code className="language-jsx">{myProjects}</code>
+            <code className="language-jsx">{myProjects}</code><br />
+            <code className="language-jsx">{myProjects2}</code><br />
+            <code className="language-jsx">{myProjects3}</code>
           </pre>
         </div>
       </Fade>
@@ -30,9 +35,9 @@ function MyProjects() {
             <div className="project-carre2" />
             <div className="project-carre3" />
             <div className="project-header">
-              <img src={blog} alt="blog" className="project-header-img" />
+              <img src={olumni} alt="blog" className="project-header-img" />
             </div>
-            <h2 className="project-title">Fake blog</h2>
+            <h2 className="project-title">O'lumni</h2>
             <div className="project-header-buttons">
               <button className="project-header-buttons-test" type="button">Tester</button>
               <a href="https://github.com/lerouzicjulien/fake-blog" rel="noopener noreferrer" target="_blank"><button className="project-header-buttons-github" type="button">Github</button></a>
@@ -51,7 +56,7 @@ function MyProjects() {
               <a href="https://github.com/lerouzicjulien/dashboard-api" rel="noopener noreferrer" target="_blank"><button type="button" className="project-header-buttons-github">Github</button></a>
             </div>
           </div>
-          <div className="project">
+          {/* <div className="project">
             <div className="project-carre1" />
             <div className="project-carre2" />
             <div className="project-carre3" />
@@ -61,9 +66,11 @@ function MyProjects() {
             <h2 className="project-title">Game JavaScript</h2>
             <div className="project-header-buttons">
               <button className="project-header-buttons-test" type="button">Tester</button>
-              <a href="#" rel="noopener noreferrer" target="_blank"><button className="project-header-buttons-github" type="button">Github</button></a>
+              <a href="#" rel="noopener noreferrer" target="_blank">
+                <button className="project-header-buttons-github" type="button">Github</button>
+              </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </Fade>
     </div>
