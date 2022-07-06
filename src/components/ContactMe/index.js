@@ -22,7 +22,7 @@ function ContactMe() {
       <Fade down>
         <div className="pulsation" />
         <div className="contactMe-title">
-          <pre className="line-numbers">
+          <pre>
             <code className="language-javascript">{contactMe1}</code><br />
             <code className="language-javascript">{contactMe2}</code><br />
             <code className="language-javascript">{contactMe3}</code><br />
