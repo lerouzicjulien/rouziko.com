@@ -2,12 +2,12 @@
 
 .aboutMe{
   font-size: vars.$text-size;
-  width: 100vw;
+  // width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.3em;
+  padding: 0.4em;
 }
 
 .dev-title{
@@ -15,21 +15,32 @@
 }
 
 .part{
-
-  &-one{
+  
+  &-one-paragraph{
     font-family: vars.$text-font;
     color: vars.$blue;
     font-weight: 400;
-  
-    &-paragraph{
-      line-height: 1.5em;
-      text-justify: inter-word;
-      font-size: 0.7em;
-      margin: 1.5em 0 1.5em 0;
-      // width: 100%;
+    line-height: 1.5em;
+    text-justify: inter-word;
+    font-size: 0.7em;
+    margin: 1.5em 0 1.5em 0.2em;
+  }
+
+  &-two{
+    display: flex;
+    flex-direction: column;
+    font-family: vars.$text-font;
+    color: vars.$blue;
+    font-weight: 400;
+
+    &-skills {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     &-words{
+
       &-single{
         color: vars.$violet;
         margin: 1em 0;
@@ -42,7 +53,7 @@
           font-family: vars.$titles-font;
           font-size: 1em;
           text-align: center;
-          margin: 2em auto 0 auto;
+          margin: auto;
           width: 8em;
           font-weight: 700;
           border-bottom: 0.2em solid vars.$green;
@@ -53,17 +64,18 @@
     }
 
     &-icones{
-      margin: 2em auto 0 0.7em;
+      margin: 2em 0;
 
     
       &-di{
-        margin: 1em auto;
+        margin: 0.8em 0.05em;
         transition: 0.5s;
         animation: iconesTranslate 5s infinite;
 
         &:nth-child(2){
           animation-delay: 0;
           margin-top: .5em;
+          margin-left: 0;
         }
         &:nth-child(3){
           animation-delay: 0.1s;
@@ -89,9 +101,7 @@
         }
         &:nth-child(10){
           animation-delay: 0.8s;
-        }
-        &:nth-child(11){
-          animation-delay: 0.9s;
+          margin-right: 0;
         }
     
         &-title{
@@ -108,16 +118,15 @@
         }
       }
     }
-  }
 
-  &-two{
     &-cv{
       display: flex;
       flex-direction: column;
       align-items: center;
       align-self: flex-start;
-      width: 90%;
+      width: 12em;
       margin: auto;
+      background-color: vars.$dark;
       border-top: 13px solid vars.$violet;
       border-bottom: 3px solid vars.$violet;
       border-left: 3px solid vars.$violet;
@@ -131,7 +140,7 @@
         height: 0.5rem;
         width: 0.5rem;
         position: absolute;
-        top: -0.5em;
+        top: -0.75em;
         left: 0.2em;
       }
       &-carre2{
@@ -140,7 +149,7 @@
         height: 0.5rem;
         width: 0.5rem;
         position: absolute;
-        top: -0.5em;
+        top: -0.75em;
         left: 0.9em;
       }
       &-carre3{
@@ -149,12 +158,16 @@
         height: 0.5rem;
         width: 0.5rem;
         position: absolute;
-        top: -0.5em;
+        top: -0.75em;
         left: 1.6em;
       }
-  
-      &-image{
-        width: 100%;
+      
+      &-text {
+        color: vars.$violet;
+        font-family: 'Press Start 2P';
+        font-size: 3em;
+        letter-spacing: -0.2em;
+        margin: .5em 0 .5em .4em;
       }
     }
   }
@@ -162,17 +175,14 @@
 
 @media (min-width: 1200px) {
   .aboutMe{
-    width: 75%;
-    // display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // padding: 2em;
+    padding: 2em;
   }
   
   .dev-title{
-    font-size: xx-large;
-    // align-self: center;
+    font-size: 1.6em;
     margin-bottom: 4em;
   }
   
@@ -180,177 +190,80 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 70%;
+    width: 90%;
   
     &-one{
 
-      // width: 70%;
+      width: 100%;
     
       &-paragraph{
         font-size: 1em;
-        // line-height: 1.5em;
-        // text-justify: inter-word;
-        // margin: 0 0 1.5em 0;
-        // // width: 100%;
-        // font-weight: 400;
+        margin: 0 2em 1.5em 0;
       }
+    }
   
+    &-two {
+      flex-direction: row;
+      align-items: center;
+
+      &-skills {
+        align-items: flex-start;
+      }
+
       &-words{
         display: flex;
-        // justify-content: center;
-        align-items: center;
-        // width: 100%;
-        margin: 0em 0 1em 0;
+        margin-right: 2em;
       
         &-single{
-          // color: vars.$violet;
-          // margin: 1em 0.4em;
-          // font-family: vars.$text-font;
-          // font-weight: 400;
+          margin: 1em 0.1em;
   
-          // font-size: 0.9em;
-          // width: 80%;
-  
-          &:nth-child(2){
-    
-            // margin-left: 2em;
-          }
-      
           &-title{
-            // color: vars.$green;
-            // font-family: vars.$titles-font;
-            // font-size: 1em;
-            // padding: 0.2em;
             width: 8em;
-            margin: 1em;
-            // border-bottom: 0.2em solid vars.$green;
-            // border-width: 2px;
-            // border-radius:0% 4% 45% 20%/0% 95% 6% 20%;
+          }
+
+          &:nth-child(2){
+            margin-left: 1em;
           }
         }
       }
   
       &-icones{
         display: flex;
-        justify-content: flex-start;
         align-items: center;
-        // width: 100%;
-        // margin: 0em 0 2em 0;
-  
+        margin-bottom: 0;
       
         &-di{
           margin: 1em 1.3em;
-          transition: 0.5s;
-          animation: iconesTranslate 5s infinite;
-  
-          &:nth-child(2){
-            animation-delay: 0;
-            // margin-left: 2em;
-          }
-          &:nth-child(3){
-            animation-delay: 0.1s;
-          }
-          &:nth-child(4){
-            animation-delay: 0.2s;
-          }
-          &:nth-child(5){
-            animation-delay: 0.3s;
-          }
-          &:nth-child(6){
-  
-            animation-delay: 0.4s;
-          }
-          &:nth-child(7){
-            animation-delay: 0.5s;
-          }
-          &:nth-child(8){
-            animation-delay: 0.6s;
-          }
-          &:nth-child(9){
-            animation-delay: 0.7s;
-          }
-          &:nth-child(10){
-            animation-delay: 0.8s;
-          }
-          &:nth-child(11){
-            animation-delay: 0.9s;
-          }
       
           &-title{
             width: 8em;
-            // color: vars.$green;
-            // font-size: 1em;
-            // font-family: vars.$titles-font;
-            // font-weight: 700;
-            // text-decoration: underline;
-            // animation: none;
-  
-            // border-bottom: 0.2em solid vars.$green;
-            // border-width: 2px;
-            // border-radius:0% 4% 45% 20%/0% 95% 6% 20%;
           }
+          
+          &:nth-child(2){
+          margin: auto;
+          margin-left: 1.2em;
         }
-      }
-    }
-  
-    &-two{
-      &-cv{
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-        // align-self: flex-start;
-        // width: 25em;
-        // padding: 1em;
-        margin: 0 1em 2em 3em;
-        border-top: 13px solid vars.$violet;
-        border-bottom: 3px solid vars.$violet;
-        border-left: 3px solid vars.$violet;
-        border-right: 3px solid vars.$violet;
-        position: relative;
-  
-        color: vars.$violet;
-        font-family: 'Press Start 2P';
-        font-size: 5em;
-        letter-spacing: 0.2em;
-        margin-left: .35em;
+        }
 
-        animation: scaleCV 5s infinite;
+       
+      }
+
+      &-cv{
+        width: 18em;
+        height: 11em;
+        display: flex;
+        align-items: center;
+        margin: auto;
     
-        &-carre1{
-          border: solid 2px black;
-          background-color: vars.$green;
-          height: 0.5rem;
-          width: 0.5rem;
-          position: absolute;
-          top: -0.5em;
-          left: 0.2em;
-        }
-        &-carre2{
-          border: solid 2px black;
-          background-color: vars.$green;
-          height: 0.5rem;
-          width: 0.5rem;
-          position: absolute;
-          top: -0.5em;
-          left: 0.9em;
-        }
-        &-carre3{
-          border: solid 2px black;
-          background-color: vars.$green;
-          height: 0.5rem;
-          width: 0.5rem;
-          position: absolute;
-          top: -0.5em;
-          left: 1.6em;
-        }
-    
-        &-image{
-          width: 100%;
+        &-text{
+          font-size: 4em;
+          margin-top: .8em;
         }
       }
     }
   }
 }
+
 
 
 @keyframes iconesTranslate {
