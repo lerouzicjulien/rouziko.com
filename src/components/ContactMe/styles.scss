@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // padding: 2em;
 
   &-title{
     margin-top: 1em;
@@ -24,7 +23,7 @@
   &-avatar {
     margin-top: 0;
     & img{
-      width: 15em;
+      width: 10em;
     }
   }
 }
@@ -32,6 +31,25 @@
 button {
   background-color: transparent;
   border: none;
+}
+
+@media (min-width:800px){
+  .contactMe{
+    &-title{
+      margin-top: 0;
+      font-size: 1em;
+    }
+  
+    &-icones{
+      flex-direction: row;
+      &-fa{
+        margin: 0 .5em; 
+      }
+    }
+    &-avatar {
+      margin-top: 0;
+    }
+  }
 }
 
 @media (min-width: 1200px) {

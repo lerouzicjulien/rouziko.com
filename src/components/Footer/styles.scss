@@ -29,6 +29,24 @@
     }
   }
 }
+@media (min-width: 800px){
+  .footer{
+    margin-top: .5em;
+    margin-bottom: 0;
+  
+    &-nav{
+      font-family: vars.$nav-font;
+      font-size: 1em;
+    
+      &-links{
+    
+        &-li{
+          margin: 0 .5em;
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: 1200px) {
   .footer {

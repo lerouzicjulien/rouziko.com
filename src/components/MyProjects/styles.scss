@@ -100,33 +100,43 @@
     text-align: center;
   }
 }
+@media (min-width:800px){
+  .myProjects {
 
+    &-title{
+      font-size: 1.2em;
+      margin-top: 0.2em;
+      }
+
+    &-results {
+      flex-direction: row;
+    }
+  }
+
+  .project{
+    width: 45%;
+    height: 18rem;
+    padding: 0 2em;
+    margin: 1em 3em;
+    justify-content: space-around;
+  
+    &-title{
+      margin-top: .5em;
+    }
+  } 
+}
 @media (min-width: 1200px) {
   .myProjects{
+    display: flex;
     width: 85%;
   
     &-title{
       font-size: 1.5em;
       }
-    &-results{
-      flex-direction: row;
-    }
   }
   
   .project{
-    width: 45%;
-    height: 25rem;
-    padding: 2em;
-    margin: 2em 3em;
-  
-    &-header{
-      &-img{
-        margin-bottom: 1em;
-       }
-    }
-  
-    &-title{
-      margin-bottom: 1em;
-    }
+    height: 27rem;
+    margin: 3em 3em;
   } 
 }

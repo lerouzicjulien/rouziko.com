@@ -116,6 +116,27 @@
 
 }
 
+@media (min-width: 800px) {
+  .accueil {
+    &-logo {
+      width: 55em;
+      height: 25rem;
+      
+      &-title {
+      font-size: 12em;
+      }
+      &-subTitle {
+        font-size: 4em;
+      }
+    }
+    
+    &-nav {
+      &-links {
+        flex-direction: row;
+      }
+    }
+  }
+}
 
 @media (min-width: 1200px) {
   .accueil{
@@ -162,7 +183,6 @@
 
     &-nav{ 
       &-links{
-        flex-direction: row;
         font-size: 2.2em;
 
         &-li{
@@ -177,66 +197,5 @@
   }
 }
 
-@media (min-width: 960px) and (max-width: 1199px) {
-  .accueil{
-    &-logo{
-      width: 55em;
-      height: 30rem;
-      border-top: 23px solid vars.$violet;
-      border-bottom: 6px solid vars.$violet;
-      border-left: 6px solid vars.$violet;
-      border-right: 6px solid vars.$violet;
-      margin-top: 5em;
 
-      &-title{
-        font-size: 16em;
-        letter-spacing: 0.1em;
-        margin-left: .25em;
-      }
-      &-subTitle{
-        font-size: 5em;
-      }
-
-      &-carre{
-        &-1{
-          height: 0.8rem;
-          width: 0.8rem;
-          top: -1em;
-        }
-        &-2{
-          height: 0.8rem;
-          width: 0.8rem;
-          top: -1em;
-        }
-        &-3{
-          height: 0.8rem;
-          width: 0.8rem;
-          top: -1em;
-        }
-      }
-    }
-
-    &-dev {
-      font-size: 3.5em;
-      margin-bottom: 0;
-      margin-top: 0.5em;
-    }
-
-    &-nav{
-      &-links{
-        flex-direction: row;
-        font-size: 1.8em;
-        margin-top: 1.5em;
-
-        &-li{
-          margin-right: 0.4em;
-      
-          &-x{
-            font-size: 2em;     
-          }
-        }
-      }
-    }
-  }
-}
 

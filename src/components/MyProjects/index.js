@@ -37,8 +37,8 @@ function MyProjects() {
           </div>
 
           <div className="project-header-buttons">
-            <a className="project-header-buttons-test" type="button">Tester</a>
-            <a href="https://github.com/lerouzicjulien/" rel="noopener noreferrer" target="_blank" className="project-header-buttons-github">Github</a>
+            <a href="https://youtu.be/api6Qm4WWSM?t=4573" rel="noopener noreferrer" target="_blank" className="project-header-buttons-test" type="button">Présentation</a>
+            {/* <a href="https://github.com/lerouzicjulien/" rel="noopener noreferrer" target="_blank" className="project-header-buttons-github">Github</a> */}
           </div>
         </div>
         <div className="project">
