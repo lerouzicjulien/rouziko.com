@@ -8,6 +8,7 @@ import { IconContext } from 'react-icons';
 import { FaGithub, FaLinkedinIn, FaMailBulk } from 'react-icons/fa';
 import { Flip } from 'react-reveal';
 import avatar from 'src/assets/images/avataaars.png';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 // == Composant
 function ContactMe() {
@@ -19,6 +20,7 @@ function ContactMe() {
   const contactMe3 = '} else {';
   const contactMe4 = '  keepMyContactAnyway()};';
   const contactMe5 = '};';
+  const mail = 'lerouzicjulien@gmail.com';
   return (
     <div className="contactMe">
       <Flip left>
@@ -38,13 +40,17 @@ function ContactMe() {
         <div className="contactMe-icones">
           <a href="https://github.com/lerouzicjulien" rel="noopener noreferrer" target="_blank"><FaGithub className="contactMe-icones-fa" /></a>
           <a href="https://fr.linkedin.com/in/julien-le-rouzic-a37870238" rel="noopener noreferrer" target="_blank"><FaLinkedinIn className="contactMe-icones-fa" /></a>
-          <a
+          <button
+            type="button"
+            className="contactMe-icones-fa"
             onClick={() => {
-              navigator.clipboard.writeText('lerouzicjulien@gmail.com');
               alert('l\'adresse mail a bien été copié');
             }}
-          ><FaMailBulk className="contactMe-icones-fa" />
-          </a>
+          >
+            <CopyToClipboard text={mail}>
+              <FaMailBulk />
+            </CopyToClipboard>
+          </button>
         </div>
       </IconContext.Provider>
     </div>
