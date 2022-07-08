@@ -116,16 +116,25 @@
   .project{
     width: 45%;
     height: 18rem;
-    padding: 0 2em;
+    padding: 8em 2em;
     margin: 1em 3em;
-    justify-content: space-around;
+    justify-content: center;
   
     &-title{
       margin-top: .5em;
     }
+
+    &-header {
+      &-img {
+        margin-top: .5em;
+      }
+      &-buttons{
+        margin-top: .5em;
+      }
+    }
   } 
 }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .myProjects{
     display: flex;
     width: 85%;
