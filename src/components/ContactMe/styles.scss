@@ -18,10 +18,6 @@
     &-fa{
       margin: .3em .5em 0 .5em;
       transition: 0.8s;
-      
-      &:hover{
-      transform: scale(1.5);
-      }
     }
   }
   &-avatar {
@@ -44,6 +40,10 @@
       flex-direction: row;
       &-fa{
         margin: 1em 5em;
+
+        &:hover{
+          transform: scale(1.5);
+          }
       }
     }
   }
