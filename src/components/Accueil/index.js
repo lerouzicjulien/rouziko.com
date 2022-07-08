@@ -1,11 +1,11 @@
 import './styles.scss';
 import { NavLink } from 'react-router-dom';
-import { Fade } from 'react-reveal';
+import { Fade, Flip } from 'react-reveal';
 
 function Accueil() {
   return (
     <div className="accueil">
-      <Fade down>
+      <Fade left>
         <div className="accueil-logo">
           <div className="accueil-logo-carre">
             <div className="accueil-logo-carre-1" />
@@ -17,7 +17,6 @@ function Accueil() {
         </div>
         <div className="accueil-dev">Développeur web</div>
       </Fade>
-      <Fade up distance="50%">
         <nav className="accueil-nav">
           <ul className="accueil-nav-links">
             <NavLink to="/aboutme" className="accueil-nav-links-li">[ About me ]</NavLink>
@@ -27,7 +26,6 @@ function Accueil() {
             <NavLink to="contactme" className="accueil-nav-links-li">[ Contact me ]</NavLink>
           </ul>
         </nav>
-      </Fade>
     </div>
   );
 }
