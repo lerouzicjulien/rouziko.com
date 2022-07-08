@@ -4,26 +4,30 @@
   font-size: vars.$text-size;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 2em;
+  // padding: 2em;
 
   &-title{
-    font-size: 0.8em;
-    margin-bottom: 3em;
+    margin-top: 1em;
+    font-size: .9em;
   }
 
   &-icones{
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     &-fa{
-      margin: 1em;
+      margin: .3em .5em 0 .5em;
       transition: 0.8s;
       
       &:hover{
       transform: scale(1.5);
       }
+    }
+  }
+  &-avatar {
+    margin-top: 0;
+    & img{
+      width: 15em;
     }
   }
 }

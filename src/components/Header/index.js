@@ -16,7 +16,7 @@ function Header() {
           <NavLink to="/contactme" className="nav-links-li">[ Contact me ]</NavLink>
         </ul>
       </nav>
-      <h1 className="me">Julien Le Rouzic</h1>
+      <Link to="/"><h1 className="me">Julien Le Rouzic</h1></Link>
     </div>
   );
 }

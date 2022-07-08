@@ -1,14 +1,37 @@
 @use '../../styles/vars';
 
 .footer{
-  // background: vars.$gradient;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  &-text{
-    text-align: center;
-    font-family: vars.$text-font;
-    color: vars.$violet;
-    margin: 0.5em;
+  margin-top: 2.2em;
+  margin-bottom: 1em;
+
+  &-nav{
+    font-family: vars.$nav-font;
+    font-size: .8em;
+  
+    &-links{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-image: vars.$gradient;
+      background-clip: text;
+      color: transparent;
+  
+      &-li{
+        margin: .05em;
+  
+        &-x{
+          font-family: vars.$titles-font;
+          font-size: 2em;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    display: none;
   }
 }

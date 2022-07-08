@@ -6,6 +6,7 @@ import ContactMe from '../ContactMe';
 import MyProjects from '../MyProjects';
 import Accueil from '../Accueil';
 import Header from '../Header';
+import Footer from '../Footer';
 
 // == Composant
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <>
               <Header />
               <AboutMe />
+              <Footer />
             </>
           )}
         />
@@ -28,6 +30,7 @@ function App() {
             <>
               <Header />
               <MyProjects />
+              <Footer />
             </>
           )}
         />
@@ -37,6 +40,7 @@ function App() {
             <>
               <Header />
               <ContactMe />
+              <Footer />
             </>
           )}
         />
