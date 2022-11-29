@@ -68,7 +68,7 @@ function AboutMe() {
 
             <div className="part-two-cv">
               <a
-                href="https://drive.google.com/file/d/1F6zQA7EY-07idSsAVIkcenuDdaDbzmrR/view?usp=sharing"
+                href="https://drive.google.com/file/d/1wuN1Euy28NKjC38S0VX-GimQLSLv-OgB/view?usp=share_link"
                 target="_blank"
               >
                 <div className="part-two-cv-carre1" />
