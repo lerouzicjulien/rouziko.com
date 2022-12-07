@@ -142,10 +142,19 @@
     &-title{
       font-size: 1.5em;
       }
+
+    &-results {
+      display: flex;
+      flex-direction: column;
+
+      &-1 {
+        display: flex;
+      }
+    } 
   }
   
   .project{
     height: 27rem;
-    margin: 3em 3em;
+    margin: 1em 1em;
   } 
 }

@@ -1,7 +1,7 @@
-@use '../../styles/vars';
+@import '../../styles/vars';
 
 .aboutMe{
-  font-size: vars.$text-size;
+  font-size: $text-size;
   // width: 95vw;
   display: flex;
   flex-direction: column;
@@ -11,26 +11,27 @@
 }
 
 .dev-title{
-  font-size: .9em;
+  font-size: .8em;
 }
 
 .part{
   
   &-one-paragraph{
-    font-family: vars.$text-font;
-    color: vars.$blue;
+    font-family: $text-font;
+    text-align: justify;
+    color: $blue;
     font-weight: 400;
     line-height: 1.5em;
     text-justify: inter-word;
-    font-size: 0.7em;
-    margin: 1.5em 0 1.5em 0.2em;
+    font-size: 0.6em;
+    margin: 1.5em 0.6em;
   }
 
   &-two{
     display: flex;
     flex-direction: column;
-    font-family: vars.$text-font;
-    color: vars.$blue;
+    font-family: $text-font;
+    color: $blue;
     font-weight: 400;
 
     &-skills {
@@ -42,21 +43,25 @@
     &-words{
 
       &-single{
-        color: vars.$violet;
+        // color: $violet;
+        background-image: $gradient;
+        background-clip: text;
+        color: transparent;
+
         margin: 1em 0;
         line-height: 2em;
         text-align: center;
         font-size: 0.8em;
     
         &-title{
-          color: vars.$green;
-          font-family: vars.$titles-font;
+          color: $green;
+          font-family: $titles-font;
           font-size: 1em;
           text-align: center;
           margin: auto;
           width: 8em;
           font-weight: 700;
-          border-bottom: 0.2em solid vars.$green;
+          border-bottom: 0.2em solid $green;
           border-width: 2px;
           border-radius:0% 4% 45% 20%/0% 95% 6% 20%;
         }
@@ -65,17 +70,22 @@
 
     &-icones{
       margin: .8em 0 1em 0;
-
     
       &-di{
-        margin: 0.8em 0.05em 0 0.05em;
+        margin: 0.8em 0.2em 0 0.2em;
         transition: 0.5s;
         animation: iconesTranslate 5s infinite;
 
+        &-group {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
         &:nth-child(2){
           animation-delay: 0;
-          margin-top: .5em;
-          margin-left: .2em;
+          // margin-top: .5em;
+          // margin-left: .2em;
         }
         &:nth-child(3){
           animation-delay: 0.1s;
@@ -96,23 +106,16 @@
         &:nth-child(8){
           animation-delay: 0.6s;
         }
-        &:nth-child(9){
-          animation-delay: 0.7s;
-        }
-        &:nth-child(10){
-          animation-delay: 0.8s;
-          margin-right: 0;
-        }
     
         &-title{
-          color: vars.$green;
-          font-family: vars.$titles-font;
+          color: $green;
+          font-family: $titles-font;
           font-size: 1em;
           text-align: center;
           margin: auto;
           width: 10em;
           font-weight: 700;
-          border-bottom: 0.2em solid vars.$green;
+          border-bottom: 0.2em solid $green;
           border-width: 2px;
           border-radius:0% 4% 45% 20%/0% 95% 6% 20%;
         }
@@ -126,17 +129,17 @@
       align-self: flex-start;
       width: 12em;
       margin: auto;
-      background-color: vars.$dark;
-      border-top: 13px solid vars.$violet;
-      border-bottom: 3px solid vars.$violet;
-      border-left: 3px solid vars.$violet;
-      border-right: 3px solid vars.$violet;
+      background-color: $dark;
+      border-top: 13px solid $violet;
+      border-bottom: 3px solid $violet;
+      border-left: 3px solid $violet;
+      border-right: 3px solid $violet;
       position: relative;
 
       animation: scaleCV 5s infinite;
       &-carre1{
         border: solid 2px black;
-        background-color: vars.$green;
+        background-color: $green;
         height: 0.5rem;
         width: 0.5rem;
         position: absolute;
@@ -145,7 +148,7 @@
       }
       &-carre2{
         border: solid 2px black;
-        background-color: vars.$green;
+        background-color: $green;
         height: 0.5rem;
         width: 0.5rem;
         position: absolute;
@@ -154,7 +157,7 @@
       }
       &-carre3{
         border: solid 2px black;
-        background-color: vars.$green;
+        background-color: $green;
         height: 0.5rem;
         width: 0.5rem;
         position: absolute;
@@ -163,7 +166,7 @@
       }
       
       &-text {
-        color: vars.$violet;
+        color: $violet;
         font-family: 'Press Start 2P';
         font-size: 3em;
         letter-spacing: -0.2em;

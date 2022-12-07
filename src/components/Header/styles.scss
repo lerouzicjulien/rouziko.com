@@ -1,4 +1,4 @@
-@use '../../styles/vars';
+@import '../../styles/vars';
 
 .header{
   display: flex;
@@ -6,11 +6,12 @@
   justify-content: space-around;
   height: 4em;
   padding: 0.8rem;
-  background-color: vars.$dark;
-  border-bottom: 4px solid vars.$violet;
+  // background-color: $dark;
+  background: $gradient;
+  border-bottom: 4px solid $violet;
   border-radius:0 0 70% 0/0% 0% 20% 0%;
-  font-family: vars.$nav-font;
-  font-size: vars.$text-size;
+  font-family: $nav-font;
+  font-size: $text-size;
   z-index: 1;
 
   &-img{
@@ -28,20 +29,21 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    background-image: vars.$gradient;
-    background-clip: text;
-    color: transparent;
+    // background-image: $gradient;
+    // background-clip: text;
+    // color: transparent;
+    color: black;
 
     &-li{
-      margin: vars.$margin-bloc;
+      margin: $margin-bloc;
 
       &:hover{
         transform: scale(1.1);
-        color: vars.$violet;
+        color: $violet;
       }
 
       &-x{
-        font-family: vars.$text-font;
+        font-family: $text-font;
         font-size: xx-large;
         font-weight: 700;
 
@@ -55,26 +57,18 @@
 }
 
 .me{
-  font-family: vars.$barCode-font;
+  font-family: $barCode-font;
   font-size: 2rem;
-  background-image: vars.$gradient;
-  background-clip: text;
-  color: transparent;
+  // background-image: $gradient;
+  // background-clip: text;
+  // color: transparent;
+  color: black;
   // margin-bottom: 0;
   text-align: center;
 }
 
 @media (min-width: 1500px) {
-  .bm-burger-button {
-    position: fixed;
-    width: 36px;
-    height: 30px;
-    left: 36px;
-    top: 36px;
-  }
-  .bm-burger-bars {
-    background: #373a47;
-  }
+
   .header{
     display: flex;
     flex-direction: column;
@@ -83,12 +77,13 @@
     width: 15em;
     height: 100vh;
     padding: 0.8rem;
-    background-color: vars.$dark;
-    border-right: 1rem solid vars.$violet;
+    // background-color: $dark;
+    background: none;
+    border-right: 1rem solid $violet;
     border-width: 4px;
     border-radius:0 4% 92% 0/4% 95% 6% 95%;
-    font-family: vars.$nav-font;
-    font-size: vars.$text-size;
+    font-family: $nav-font;
+    font-size: $text-size;
     z-index: 1;
   
     &-img{
@@ -107,20 +102,20 @@
       justify-content: space-around;
       align-items: center;
       width: 100%;
-      background-image: vars.$gradient;
+      background-image: $gradient;
       background-clip: text;
       color: transparent;
   
       &-li{
-        margin: vars.$margin-bloc;
+        margin: $margin-bloc;
   
         &:hover{
           transform: scale(1.1);
-          color: vars.$violet;
+          color: $violet;
         }
   
         &-x{
-          font-family: vars.$text-font;
+          font-family: $text-font;
           font-size: xx-large;
           font-weight: 700;
   
@@ -134,9 +129,9 @@
   }
   
   .me{
-    font-family: vars.$barCode-font;
+    font-family: $barCode-font;
     font-size: 3rem;
-    background-image: vars.$gradient;
+    background-image: $gradient;
     background-clip: text;
     color: transparent;
     margin-bottom: 2em;
