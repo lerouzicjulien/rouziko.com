@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import Prism from 'prismjs';
 import { IconContext } from 'react-icons';
 import { FaGithub, FaLinkedinIn, FaMailBulk } from 'react-icons/fa';
-import { Flip } from 'react-reveal';
+import { Fade } from 'react-reveal';
 import avatar from 'src/assets/images/avataaars.png';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
@@ -22,8 +22,8 @@ function ContactMe() {
   const contactMe5 = '};';
   const mail = 'lerouzicjulien@gmail.com';
   return (
-    <div className="contactMe">
-      <Flip left>
+    <Fade up>
+      <div className="contactMe">
         <div className="pulsation" />
         <div className="contactMe-title">
           <pre>
@@ -34,26 +34,26 @@ function ContactMe() {
             <code className="language-javascript">{contactMe5}</code>
           </pre>
         </div>
-      </Flip>
-      <Flip left><div className="contactMe-avatar"><img src={avatar} alt="avatar" /></div></Flip>
-      <IconContext.Provider value={{ color: '#5cfac6', size: '5em' }}>
-        <div className="contactMe-icones">
-          <a href="https://github.com/lerouzicjulien" rel="noopener noreferrer" target="_blank"><FaGithub className="contactMe-icones-fa" /></a>
-          <a href="https://fr.linkedin.com/in/julien-le-rouzic-a37870238" rel="noopener noreferrer" target="_blank"><FaLinkedinIn className="contactMe-icones-fa" /></a>
-          <button
-            type="button"
-            className="contactMe-icones-fa"
-            onClick={() => {
-              alert('l\'adresse mail a bien été copié');
-            }}
-          >
-            <CopyToClipboard text={mail}>
-              <FaMailBulk />
-            </CopyToClipboard>
-          </button>
-        </div>
-      </IconContext.Provider>
-    </div>
+        <div className="contactMe-avatar"><img src={avatar} alt="avatar" /></div>
+        <IconContext.Provider value={{ color: '#5cfac6', size: '5em' }}>
+          <div className="contactMe-icones">
+            <a href="https://github.com/lerouzicjulien" rel="noopener noreferrer" target="_blank"><FaGithub className="contactMe-icones-fa" /></a>
+            <a href="https://fr.linkedin.com/in/julien-le-rouzic-a37870238" rel="noopener noreferrer" target="_blank"><FaLinkedinIn className="contactMe-icones-fa" /></a>
+            <button
+              type="button"
+              className="contactMe-icones-fa"
+              onClick={() => {
+                alert('l\'adresse mail a bien été copié');
+              }}
+            >
+              <CopyToClipboard text={mail}>
+                <FaMailBulk />
+              </CopyToClipboard>
+            </button>
+          </div>
+        </IconContext.Provider>
+      </div>
+    </Fade>
   );
 }
 

@@ -5,15 +5,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: -1;
 
   &-title{
-    margin-top: 1em;
-    font-size: .9em;
+    margin-top: 3em;
+    font-size: .7em;
   }
 
   &-icones{
     display: flex;
     justify-content: space-around;
+    margin-top: 1em;
+    margin-bottom: 3em;
     &-fa{
       width: 3.5em;
       margin: .3em .5em 0 .5em;
@@ -21,7 +24,7 @@
     }
   }
   &-avatar {
-    margin-top: 0;
+    margin-top: 4em;
     & img{
       width: 10em;
     }

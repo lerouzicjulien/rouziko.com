@@ -30,7 +30,7 @@ function Header() {
             <NavLink to="/contactme" className="nav-links-li">[ Contact me ]</NavLink>
           </ul>
         </nav>
-        <Link to="/"><h1 className="me">Julien Le Rouzic</h1></Link>
+        <Link to="/"><h1 className="me">Julien<br />Le Rouzic</h1></Link>
       </div>
     </Fade>
   );

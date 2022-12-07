@@ -1,11 +1,11 @@
 import './styles.scss';
 import { NavLink } from 'react-router-dom';
-import { Fade } from 'react-reveal';
+import { Rotate } from 'react-reveal';
 
 // == Composant
 function Footer() {
   return (
-    <Fade down>
+    <Rotate bottom left>
       <div className="footer">
         <nav className="footer-nav">
           <ul className="footer-nav-links">
@@ -17,7 +17,7 @@ function Footer() {
           </ul>
         </nav>
       </div>
-    </Fade>
+    </Rotate>
   );
 }
 

@@ -17,8 +17,6 @@ import { useEffect } from 'react';
 import Prism from 'prismjs';
 import { Fade } from 'react-reveal';
 
-// JS, React, TS, Redux, Git, Github, VSCode, Illustrator
-
 // == Composant
 function AboutMe() {
   useEffect(() => {
@@ -45,16 +43,14 @@ function AboutMe() {
             <div className="part-two">
               <div className="part-two-skills">
                 <div className="part-two-words">
-                  <div className="part-two-words-single-title">Soft skills:</div>
                   <div className="part-two-words-single">Autonomie  /  Curiosité  /  Résolution de problèmes  /  Esprit  d'équipe  /  Transmission</div>
                 </div>
 
-                <IconContext.Provider value={{ color: '#ad92ff', size: '2em' }}>
+                <IconContext.Provider value={{ size: '1.7em' }}>
                   <div className="part-two-icones">
-                    <div className="part-two-icones-di-title">Hard skills:</div>
                     <div className="part-two-icones-di-group">
-                      <SiReact className="part-two-icones-di" />
                       <SiJavascript className="part-two-icones-di" />
+                      <SiReact className="part-two-icones-di" />
                       <SiTypescript className="part-two-icones-di" />
                       <SiRedux className="part-two-icones-di" />
                       <SiGit className="part-two-icones-di" />
@@ -73,7 +69,7 @@ function AboutMe() {
                   <div className="part-two-cv-carre1" />
                   <div className="part-two-cv-carre2" />
                   <div className="part-two-cv-carre3" />
-                  <div className="part-two-cv-text">C.V.</div>
+                  <div className="part-two-cv-text"><span>C.V</span></div>
                 </a>
               </div>
 

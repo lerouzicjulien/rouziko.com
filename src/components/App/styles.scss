@@ -1,13 +1,10 @@
 @use '../../styles/vars';
 .app {
-  // display: flex;
   position: relative;
-  // background-color: vars.$dark;
 }
 pre{
   border-radius: 0.1em;
-  box-shadow: 3px 3px 12px vars.$dark;
-  // padding: 0em;
+
 }
 
 @media (min-width: 1500px) {
@@ -17,7 +14,6 @@ pre{
   }
   pre{
     border-radius: 0.1em;
-    box-shadow: 3px 3px 12px vars.$dark;
     padding: 0.5em;
   }
 }

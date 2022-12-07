@@ -3,13 +3,11 @@
 .header{
   display: flex;
   align-items:center;
-  justify-content: space-around;
+  justify-content: center;
   height: 4em;
   padding: 0.8rem;
-  // background-color: $dark;
   background: $gradient;
-  border-bottom: 4px solid $violet;
-  border-radius:0 0 70% 0/0% 0% 20% 0%;
+  border-radius: 25% 25% 56% 17% / 0% 0% 34% 29%;
   font-family: $nav-font;
   font-size: $text-size;
   z-index: 1;
@@ -29,9 +27,6 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    // background-image: $gradient;
-    // background-clip: text;
-    // color: transparent;
     color: black;
 
     &-li{
@@ -57,14 +52,11 @@
 }
 
 .me{
-  font-family: $barCode-font;
-  font-size: 2rem;
-  // background-image: $gradient;
-  // background-clip: text;
-  // color: transparent;
+  font-family: $titles-section-font;
+  font-size: 1.2rem;
   color: black;
-  // margin-bottom: 0;
   text-align: center;
+  margin-left: 2em;
 }
 
 @media (min-width: 1500px) {

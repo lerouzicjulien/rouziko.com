@@ -1,9 +1,11 @@
 @use '../../styles/vars';
 
 .footer{
-  margin-top: 2.2em;
-  margin-bottom: 1em;
+  margin-top: 1em;
   background-color: black;
+  width: 100vw;
+  padding-bottom: 2em;
+  z-index: 42;
 
   &-nav{
     font-family: vars.$nav-font;
