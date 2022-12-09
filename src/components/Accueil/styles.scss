@@ -127,16 +127,6 @@
 
 @media (min-width: 500px) {
   .accueil {
-    // justify-content: flex-start;
-    // padding-top: 5em;
-    //   &-cadre-logo {
-    //     background: $gradient;
-    //     padding: 5px;
-    //     padding-top: 20px;
-    //     margin-top: 2em;
-    //     margin-bottom: 3em;
-    //   }
-
     &-logo {
       width: 90vw;
       height: 20rem;
@@ -165,62 +155,38 @@
     }
 
   }
+}
 
+@media (min-width: 1000px) {
+  .accueil {
 
-  @media (min-width: 1000px) {
-    .accueil {
-      &-logo {
-        width: 75em;
-        height: 37rem;
-        padding: 1em;
+    &-cadre-logo {
+      width: 50vw;
+      height: 55vh;
+    }
 
-        &-title {
-          font-size: 20em;
-        }
+    &-logo {
+      width: 49.4vw;
+      height: 52.4vh;
 
-        &-subTitle {
-          font-size: 6em;
-          margin-bottom: 1.5em;
-        }
-
-        &-carre {
-          &-1 {
-            height: 0.8rem;
-            width: 0.8rem;
-            top: -1em;
-          }
-
-          &-2 {
-            height: 0.8rem;
-            width: 0.8rem;
-            top: -1em;
-          }
-
-          &-3 {
-            height: 0.8rem;
-            width: 0.8rem;
-            top: -1em;
-          }
-        }
+      &-title {
+        font-size: 15em;
       }
 
-      &-dev {
-        font-size: 4.5em;
-        margin-bottom: 0;
+      &-subTitle {
+        font-size: 3.5em;
       }
+    }
 
-      &-nav {
-        &-links {
-          font-size: 2.2em;
+    &-dev {
+      font-size: 3em;
+    }
 
-          &-li {
-            margin-right: 0.4em;
+    &-nav {
 
-            &-x {
-              font-size: 2em;
-            }
-          }
-        }
+      &-links {
+        flex-direction: row;
+        // font-size: 2.2em;
       }
     }
   }

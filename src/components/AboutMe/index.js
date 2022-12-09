@@ -13,27 +13,44 @@ import {
   SiGithub,
   SiAdobeillustrator,
 } from 'react-icons/si';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Prism from 'prismjs';
 import { Fade } from 'react-reveal';
 
 // == Composant
 function AboutMe() {
+  const [matches, setMatches] = useState(
+    window.matchMedia('(min-width: 1000px)').matches,
+  );
+
   useEffect(() => {
+    window
+      .matchMedia('(min-width: 1000px)')
+      .addEventListener('change', (e) => setMatches(e.matches));
+
     Prism.highlightAll();
-  }, []);
+  }, [matches]);
+
   const title = 'class Julien extends Le.Rouzic {';
   const title2 = '  \'Développeur web\'';
   const title3 = '};';
+
+  const title4 = 'class Julien extends Le.Rouzic {\'Développeur web\'}';
 
   return (
     <Fade up>
       <div className="aboutMe">
         <div className="dev-title">
           <pre>
-            <code className="language-jsx">{title}</code><br />
-            <code className="language-jsx">{title2}</code><br />
-            <code className="language-jsx">{title3}</code>
+            {matches ? (
+              <code className="language-jsx">{title4}</code>
+            ) : (
+              <>
+                <code className="language-jsx">{title}</code><br />
+                <code className="language-jsx">{title2}</code><br />
+                <code className="language-jsx">{title3}</code>
+              </>
+            )}
           </pre>
         </div>
         <div className="part">

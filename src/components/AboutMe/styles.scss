@@ -195,91 +195,54 @@
 }
 
 @media (min-width: 1000px) {
-  .aboutMe {
-    width: 85%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2em;
-  }
 
   .dev-title {
-    font-size: 1.6em;
-    margin-bottom: 4em;
+    font-size: 1.2em;
+    margin : 1em;
   }
 
   .part {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     width: 90%;
 
     &-one {
 
-      width: 100%;
-
       &-paragraph {
         font-size: 1em;
-        margin: 0 2em 1.5em 0;
       }
     }
 
     &-two {
+      margin-top: 4em;
       flex-direction: row;
-      align-items: center;
-
-      &-skills {
-        align-items: flex-start;
-      }
 
       &-words {
         display: flex;
-        margin-right: 2em;
-
-        &-single {
-          margin: 1em 0.1em;
-
-          &-title {
-            width: 8em;
-          }
-
-          &:nth-child(2) {
-            margin-left: 1em;
-          }
-        }
+        justify-content: center;
       }
 
       &-icones {
         display: flex;
-        align-items: center;
+        justify-content: center;
         margin-bottom: 0;
+        font-size: 1.5em;
 
         &-di {
-          margin: 1em 1.3em;
-
-          &-title {
-            width: 8em;
-          }
-
-          &:nth-child(2) {
-            margin: auto;
-            margin-left: 1.2em;
-          }
+          margin: 1em;
         }
-
-
       }
 
       &-cv {
-        width: 18em;
-        height: 11em;
-        display: flex;
-        align-items: center;
-        margin: auto;
+        width: 20vw;
+        height: 30vh;
+
 
         &-text {
-          font-size: 4em;
-          margin-top: .8em;
+          width: 19.5vw;
+          height: 27.5vh;
+          font-size: 5em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }

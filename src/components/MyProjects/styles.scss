@@ -155,11 +155,11 @@
 
 @media (min-width: 1000px) {
   .myProjects {
-    display: flex;
-    width: 85%;
+    // display: flex;
+    // width: 85%;
 
     &-title {
-      font-size: 1.5em;
+      // font-size: 1.5em;
     }
 
     &-results {
@@ -172,8 +172,32 @@
     }
   }
 
+  .cadre {
+    width: 30vw;
+    height: 32vh;
+    margin: .5em;
+  }
+
   .project {
-    height: 27rem;
-    margin: 1em 1em;
+    width: 29.5vw;
+    height: 29.7vh;
+    font-size: 1em;
+
+    &-title {
+      font-size: 1em;
+      margin-bottom: 1em;
+    }
+    &-header {
+
+      &-img {
+        width: 15em;
+      }
+      &-buttons {
+        margin: 10em;
+      }
+      &-text {
+        margin-top: 1em;
+      }
+    }
   }
 }

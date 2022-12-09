@@ -97,10 +97,6 @@ function MyProjects() {
                 <div className="project-header-text">
                   Application de suivi des entretiens
                 </div>
-                {/* <div className="project-header-buttons">
-                  <a href="https://rouziko-dashboard.surge.sh/" rel="noopener noreferrer" target="_blank" className="project-header-buttons-test">Tester</a>
-                  <a href="https://github.com/lerouzicjulien/dashboard-api" rel="noopener noreferrer" target="_blank" className="project-header-buttons-github">Github</a>
-                </div> */}
               </div>
             </div>
             <div className="cadre">
@@ -115,10 +111,6 @@ function MyProjects() {
                 <div className="project-header-text">
                   IHM pour visualiser le trafic d'un réseau et détection d'intrusion
                 </div>
-                {/* <div className="project-header-buttons">
-                  <a href="https://rouziko-dashboard.surge.sh/" rel="noopener noreferrer" target="_blank" className="project-header-buttons-test">Tester</a>
-                  <a href="https://github.com/lerouzicjulien/dashboard-api" rel="noopener noreferrer" target="_blank" className="project-header-buttons-github">Github</a>
-                </div> */}
               </div>
             </div>
           </div>

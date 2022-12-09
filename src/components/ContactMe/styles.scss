@@ -1,31 +1,34 @@
 @use '../../styles/vars';
 
-.contactMe{
+.contactMe {
   font-size: vars.$text-size;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: -1;
 
-  &-title{
+  &-title {
     margin-top: 3em;
     font-size: .7em;
   }
 
-  &-icones{
+  &-icones {
     display: flex;
     justify-content: space-around;
     margin-top: 1em;
     margin-bottom: 3em;
-    &-fa{
+
+    &-fa {
       width: 3.5em;
       margin: .3em .5em 0 .5em;
       // transition: 0.8s;
     }
   }
+
   &-avatar {
     margin-top: 4em;
-    & img{
+
+    & img {
       width: 10em;
     }
   }
@@ -36,22 +39,25 @@ button {
   border: none;
 }
 
-@media (min-width:500px){
-  .contactMe{
-    &-title{
+@media (min-width:500px) {
+  .contactMe {
+    &-title {
       font-size: 1.2em;
       margin-bottom: 2em;
     }
-  
-    &-icones{
+
+    &-icones {
       flex-direction: row;
       margin-right: 2em;
-      &-fa{
-        margin: 0 .5em; 
+
+      &-fa {
+        margin: 0 .5em;
       }
     }
+
     &-avatar {
       margin-top: 0;
+
       & img {
         width: 15em;
       }
@@ -60,26 +66,17 @@ button {
 }
 
 @media (min-width: 1000px) {
-  .contactMe{
-    width: 85%;
-    margin-top: 4em;
-  
-    &-title{
-      font-size: 1.6em;
+  .contactMe {
+
+    &-title {
+      margin-top: 1em;
     }
-  
-    &-icones{
 
-      &-fa{
-        margin: 1em 2em;
-
-        &:nth-child(1){
-          margin-left: 1em;
-        }
-
-        &:hover{
+    &-icones {
+      &-fa {
+        &:hover {
           transform: scale(1.2);
-          }
+        }
       }
     }
   }
