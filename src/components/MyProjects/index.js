@@ -10,12 +10,12 @@ import ziem from '../../assets/images/ziem.png';
 // == Composant
 function MyProjects() {
   const [matches, setMatches] = useState(
-    window.matchMedia('(min-width: 400px)').matches,
+    window.matchMedia('(min-width: 1000px)').matches,
   );
 
   useEffect(() => {
     window
-      .matchMedia('(min-width: 400px)')
+      .matchMedia('(min-width: 1000px)')
       .addEventListener('change', (e) => setMatches(e.matches));
 
     Prism.highlightAll();

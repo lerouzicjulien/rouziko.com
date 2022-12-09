@@ -1,6 +1,6 @@
 @import '../../styles/vars';
 
-.aboutMe{
+.aboutMe {
   font-size: $text-size;
   display: flex;
   flex-direction: column;
@@ -9,13 +9,13 @@
   padding: 1em;
 }
 
-.dev-title{
+.dev-title {
   font-size: .8em;
 }
 
-.part{
-  
-  &-one-paragraph{
+.part {
+
+  &-one-paragraph {
     font-family: $text-font;
     text-align: justify;
     color: $blue;
@@ -26,7 +26,7 @@
     margin: 2em 0.6em 2em 0.6em;
   }
 
-  &-two{
+  &-two {
     display: flex;
     flex-direction: column;
     font-family: $text-font;
@@ -39,9 +39,9 @@
       justify-content: center;
     }
 
-    &-words{
+    &-words {
 
-      &-single{
+      &-single {
         background-image: $gradient;
         background-clip: text;
         color: transparent;
@@ -53,10 +53,10 @@
       }
     }
 
-    &-icones{
+    &-icones {
       margin: 1em 0 1em 0;
-    
-      &-di{
+
+      &-di {
         margin: 0.8em 0.2em 0 0.2em;
         transition: 0.5s;
         animation: iconesTranslate 3s infinite;
@@ -70,28 +70,34 @@
         &:nth-child(1) {
           animation-delay: 0s;
         }
-        &:nth-child(2){
+
+        &:nth-child(2) {
           animation-delay: 0.1s;
         }
-        &:nth-child(3){
+
+        &:nth-child(3) {
           animation-delay: 0.2s;
         }
-        &:nth-child(4){
+
+        &:nth-child(4) {
           animation-delay: 0.3s;
         }
-        &:nth-child(5){
+
+        &:nth-child(5) {
           animation-delay: 0.4s;
         }
-        &:nth-child(6){
+
+        &:nth-child(6) {
           animation-delay: 0.5s;
         }
-        &:nth-child(7){
+
+        &:nth-child(7) {
           animation-delay: 0.6s;
         }
       }
     }
 
-    &-cv{
+    &-cv {
       background: $gradient;
       display: flex;
       flex-direction: column;
@@ -103,7 +109,7 @@
       margin: .9em auto 0 auto;
       position: relative;
 
-      &-carre1{
+      &-carre1 {
         background-color: black;
         height: 0.5rem;
         width: 0.5rem;
@@ -111,7 +117,8 @@
         top: 0.3em;
         left: 0.3em;
       }
-      &-carre2{
+
+      &-carre2 {
         background-color: black;
         height: 0.5rem;
         width: 0.5rem;
@@ -119,7 +126,8 @@
         top: 0.3em;
         left: 0.9em;
       }
-      &-carre3{
+
+      &-carre3 {
         background-color: black;
         height: 0.5rem;
         width: 0.5rem;
@@ -127,7 +135,7 @@
         top: 0.3em;
         left: 1.45em;
       }
-      
+
       &-text {
         background: black;
         font-family: 'Press Start 2P';
@@ -135,7 +143,7 @@
         padding: 0.4em 0.75em;
         letter-spacing: -0.2em;
 
-        & span{
+        & span {
           background-image: $gradient;
           background-clip: text;
           color: transparent;
@@ -145,113 +153,77 @@
   }
 }
 
-@media (min-width: 800px) {
-  .aboutMe{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1em;
-    margin-bottom: 2em;
+@media (min-width: 500px) {
+
+  .dev-title {
+    font-size: 1em;
   }
 
-  .part{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  
-    &-one{
-    
-      &-paragraph{
+  .part {
+    &-one {
+      &-paragraph {
         font-size: .9em;
       }
     }
-  
+
     &-two {
-      flex-direction: row;
-
-      &-words{
-        display: flex;
-        margin-right: .1em;
-      
-        &-single{
-          margin: 1em 0;
-  
-          &-title{
-            width: 7.5em;
-            font-size: 1em;
-          }
-
-          &:nth-child(2){
-            margin-left: .5em;
-          }
-        }
+      &-words {
+        font-size: 1.5em;
       }
-  
-      &-icones{
-        display: flex;
-        align-items: center;
-        margin-bottom: 0;
-      
-        &-di{
-          margin: 1em 1.3em;
-      
-          &-title{
-            width: 8em;
-          }
-          
-          &:nth-child(2){
-          margin: auto;
-          margin-left: 1.2em;
-          }
+
+      &-icones {
+
+
+        &-di {
+          margin: 1em .6em;
+          font-size: 1.5em;
+
         }
       }
 
-      &-cv{
-        width: 10em;
-        height: 6em;
-        display: flex;
-        align-items: center;
-        margin-left: 1em;
-    
-        &-text{
-          font-size: 2em;
-          margin-top: .8em;
+      &-cv {
+        width: 35vw;
+        height: 14vh;
+        margin-bottom: 3em;
+
+        &-text {
+          font-size: 3.5em;
         }
       }
     }
   }
 }
 
-@media (min-width: 1500px) {
-  .aboutMe{
+@media (min-width: 1000px) {
+  .aboutMe {
     width: 85%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2em;
   }
-  
-  .dev-title{
+
+  .dev-title {
     font-size: 1.6em;
     margin-bottom: 4em;
   }
-  
-  .part{
+
+  .part {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     width: 90%;
-  
-    &-one{
+
+    &-one {
 
       width: 100%;
-    
-      &-paragraph{
+
+      &-paragraph {
         font-size: 1em;
         margin: 0 2em 1.5em 0;
       }
     }
-  
+
     &-two {
       flex-direction: row;
       align-items: center;
@@ -260,52 +232,52 @@
         align-items: flex-start;
       }
 
-      &-words{
+      &-words {
         display: flex;
         margin-right: 2em;
-      
-        &-single{
+
+        &-single {
           margin: 1em 0.1em;
-  
-          &-title{
+
+          &-title {
             width: 8em;
           }
 
-          &:nth-child(2){
+          &:nth-child(2) {
             margin-left: 1em;
           }
         }
       }
-  
-      &-icones{
+
+      &-icones {
         display: flex;
         align-items: center;
         margin-bottom: 0;
-      
-        &-di{
+
+        &-di {
           margin: 1em 1.3em;
-      
-          &-title{
+
+          &-title {
             width: 8em;
           }
-          
-          &:nth-child(2){
-          margin: auto;
-          margin-left: 1.2em;
+
+          &:nth-child(2) {
+            margin: auto;
+            margin-left: 1.2em;
+          }
         }
+
+
       }
 
-       
-      }
-
-      &-cv{
+      &-cv {
         width: 18em;
         height: 11em;
         display: flex;
         align-items: center;
         margin: auto;
-    
-        &-text{
+
+        &-text {
           font-size: 4em;
           margin-top: .8em;
         }
@@ -317,36 +289,42 @@
 
 
 @keyframes iconesTranslate {
-  0%{
+  0% {
     transform: none;
   }
-  5%{
+
+  5% {
     transform: translateY(-0.7em);
   }
 
-  15%{
+  15% {
     transform: translateY(0.1em);
   }
-  20%{
+
+  20% {
     transform: none;
   }
-  100%{
+
+  100% {
     transform: none;
   }
 }
 
 @keyframes scaleCV {
-  0%{
+  0% {
     transform: none;
   }
-  25%{
+
+  25% {
     transform: none;
-      
+
   }
-  35%{
+
+  35% {
     transform: scale(1.04);
   }
-  60%{
+
+  60% {
     transform: none;
   }
 }

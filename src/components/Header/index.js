@@ -8,12 +8,12 @@ import logoBlack from '../../assets/images/logoRZKblack.png';
 // == Composant
 function Header() {
   const [matches, setMatches] = useState(
-    window.matchMedia('(min-width: 400px)').matches,
+    window.matchMedia('(min-width: 1000px)').matches,
   );
 
   useEffect(() => {
     window
-      .matchMedia('(min-width: 400px)')
+      .matchMedia('(min-width: 1000px)')
       .addEventListener('change', (e) => setMatches(e.matches));
   }, []);
 

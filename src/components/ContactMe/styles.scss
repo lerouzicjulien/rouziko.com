@@ -20,7 +20,7 @@
     &-fa{
       width: 3.5em;
       margin: .3em .5em 0 .5em;
-      transition: 0.8s;
+      // transition: 0.8s;
     }
   }
   &-avatar {
@@ -36,26 +36,30 @@ button {
   border: none;
 }
 
-@media (min-width:800px){
+@media (min-width:500px){
   .contactMe{
     &-title{
-      margin-top: 0;
-      font-size: 1em;
+      font-size: 1.2em;
+      margin-bottom: 2em;
     }
   
     &-icones{
       flex-direction: row;
+      margin-right: 2em;
       &-fa{
         margin: 0 .5em; 
       }
     }
     &-avatar {
       margin-top: 0;
+      & img {
+        width: 15em;
+      }
     }
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1000px) {
   .contactMe{
     width: 85%;
     margin-top: 4em;
